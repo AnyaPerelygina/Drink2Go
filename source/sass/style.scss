@@ -1,7 +1,38 @@
 /* GLOBAL */
-@import "global/variables";
-@import "global/global";
-@import "global/fonts";
+@import "global/variables.scss";
+@import "global/global.scss";
+@import "global/fonts.scss";
+@import "global/utils.scss";
 
 /* BLOCKS */
-@import "blocks/header";
+@import "blocks/advantages.scss";
+@import "blocks/button-next.scss";
+@import "blocks/button-previous.scss";
+@import "blocks/button.scss";
+@import "blocks/card.scss";
+@import "blocks/catalog.scss";
+@import "blocks/contact.scss";
+@import "blocks/control.scss";
+@import "blocks/copyright.scss";
+@import "blocks/drinks-list.scss";
+@import "blocks/drinks.scss";
+@import "blocks/filter-milk.scss";
+@import "blocks/filter-origin.scss";
+@import "blocks/footer-nav.scss";
+@import "blocks/footer.scss";
+@import "blocks/header.scss";
+@import "blocks/main-page.scss";
+@import "blocks/map.scss";
+@import "blocks/nav.scss";
+@import "blocks/pagination.scss";
+@import "blocks/price-control.scss";
+@import "blocks/price-from.scss";
+@import "blocks/price-to.scss";
+@import "blocks/promo-card.scss";
+@import "blocks/promo.scss";
+@import "blocks/range.scss";
+@import "blocks/select.scss";
+@import "blocks/site-list.scss";
+@import "blocks/slider.scss";
+@import "blocks/social-list.scss";
+@import "blocks/user-list.scss";
