@@ -1,4 +1,4 @@
 # Грейдирование в HTML Academy на профессии «Фронтенд-разработчик #15» - проект Drink2Go.
 
-- Студент: [Анна Перелыгина] (https://github.com/AnyaPerelygina/Drink2Go).
+- Студент: [Анна Перелыгина](https://up.htmlacademy.ru/adaptive/28/user/2162321).
 - Время выполнения проекта: **часов **минут.
