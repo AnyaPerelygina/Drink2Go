@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Drink2Go</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/min.style.css">
     <link rel="preload" href="/fonts/Montserrat-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="/fonts/Montserrat-Medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="/fonts/Montserrat-SemiBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -39,14 +39,18 @@
           </ul>
           <ul class="nav__list user-list">
             <li class="user-list__item">
-              <a>
-                <svg></svg>
+              <a class="user-list__link user-list__link--entrance">
+                <svg class="user-list__account" width="16" height="16" aria-hidden="true" focusable="false" aria-label="Войти в личный кабинет">
+                  <use href="img/icons/stack.svg#user"></use>
+                </svg>
                 <span class="visually-hidden">Войти</span>
               </a>
             </li>
             <li class="user-list__item">
-              <a>
-                <svg></svg>
+              <a class="user-list__link user-list__link--basket">
+                <svg class="user-list__basket" width="16" height="16" aria-hidden="true" focusable="false" aria-label="Просмотреть корзину">
+                  <use href="img/icons/stack.svg#basket-nav"></use>
+                </svg>
                 <span class="visually-hidden">Корзина</span>
               </a>
             </li>
@@ -439,19 +443,25 @@
           <li>
             <a class="social-list__link" href="#">
               <span class="visually-hidden">Вконтакте</span>
-              <svg class="social-list__link-icon" width="20" height="20"></svg>
+              <svg class="social-list__link-icon" width="20" height="20" aria-hidden="true" focusable="false" aria-label="Перейти на страницу в Вконтакте">
+                <use href="img/icons/stack.svg#vk"></use>
+              </svg>
             </a>
           </li>
           <li>
             <a class="social-list__link" href="#">
               <span class="visually-hidden">Пинтерест</span>
-              <svg class="social-list__link-icon" width="22" height="22"></svg>
+              <svg class="social-list__link-icon" width="22" height="22" aria-hidden="true" focusable="false" aria-label="Перейти на страницу в Пинтересте">
+                <use href="img/icons/stack.svg#pinterest"></use>
+              </svg>
             </a>
           </li>
           <li>
             <a class="social-list__link" href="#">
               <span class="visually-hidden">Одноклассники</span>
-              <svg class="social-list__link-icon" width="20" height="20"></svg>
+              <svg class="social-list__link-icon" width="20" height="20" aria-hidden="true" focusable="false" aria-label="Перейти на страницу в Одноклассниках">
+                <use href="img/icons/stack.svg#ok"></use>
+              </svg>
             </a>
           </li>
         </ul>
@@ -493,19 +503,19 @@
           <h3 class="contact__title">Контакты</h3>
           <ul class="contact__list">
             <li class="contact__item contact__item--adress">
-              <svg class="contact__item__point-icon" width="20" height="20"></svg>
               <span class="contact__item__point-adress">Санкт-Петербург, набережная реки Карповки, дом 5</span>
             </li>
             <li class="contact__item contact__item--phone">
               <a href="tel:+79999999999">+7 (999) 999-99-99</a>
-              <svg class="contact__item__phone-icon" width="13" height="16"></svg>
             </li>
           </ul>
         </div>
         <div class="footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__text">Разработано в <b>HTML Academy</b><span>
-            <svg class="copyright__link-icon" width="12" height="16"></svg>
+            <svg class="copyright__link-icon" width="12" height="16" aria-hidden="true" focusable="false" aria-label="Перейти на сайт HTML Academy">
+              <use href="img/icons/stack.svg#logo-htmlacademy"></use>
+            </svg>
           </a>
         </div>
       </div>
