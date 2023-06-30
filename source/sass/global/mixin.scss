@@ -1,0 +1,25 @@
+@mixin smaill {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+@mixin middle {
+  font-size: 14px;
+  line-height: 20px;
+}
+
+@mixin big {
+  font-size: 20px;
+  line-height: 32px;
+}
+
+@mixin large {
+  font-size: 24px;
+  line-height: 36px;
+}
+
+@mixin reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

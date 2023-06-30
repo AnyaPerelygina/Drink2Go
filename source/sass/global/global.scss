@@ -1,1 +1,40 @@
-/* здесь используйте глобальные селекторы img, body, html и так далее*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+  background-color: #ffffff;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #333333;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+input,
+button {
+  font-family: inherit;
+}
