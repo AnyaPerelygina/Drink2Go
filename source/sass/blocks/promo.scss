@@ -1,0 +1,47 @@
+.promo {
+  position: relative;
+  min-height: 714px;
+  z-index: 0;
+}
+
+.promo__list {
+  @include reset;
+}
+
+.promo__card--flat-white {
+  background-color: $bg-flat-white;
+
+  @media (min-width: $tablet-width) {
+    height: 640px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 714px;
+  }
+}
+
+.promo__card--lavender {
+  display: none;
+  background-color: $bg-lavender-latte;
+
+  @media (min-width: $tablet-width) {
+    height: 640px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 714px;
+  }
+}
+
+.promo__card--espresso {
+  display: none;
+  background-color: $bg-espresso;
+
+  @media (min-width: $tablet-width) {
+    height: 640px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 714px;
+  }
+}

@@ -1,0 +1,160 @@
+.promo-card {
+  display: grid;
+  justify-items: center;
+  padding: 20px 20px 60px;
+
+  @media (min-width: $tablet-width) {
+    padding: 60px 20px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 30px;
+    padding: 32px 140px 73px;
+  }
+}
+
+.promo-card__can {
+  margin-bottom: 5px;
+
+  @media (min-width: $tablet-width) {
+    order: 1;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+    margin-left: 0;
+  }
+}
+
+.promo-card__picture {
+  @media (min-width: $tablet-width) {
+    width: 476px;
+    height: 476px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 600px;
+    height: 600px;
+    object-fit: cover;
+    margin-left: -17px;
+  }
+}
+
+.promo-card__info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -5px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: span 2;
+    align-self: center;
+    align-items: start;
+  }
+}
+
+.promo-card__subtitle {
+  @include small;
+  display: block;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $base-primary;
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 4px;
+
+  @media (min-width: $tablet-width) {
+    order: -1;
+  }
+}
+
+.promo-card__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin: 0 0 10px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 56px;
+    line-height: 80px;
+    margin-bottom: 16px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+  }
+}
+
+.promo-card__description {
+  @include middle;
+  font-weight: 400;
+  text-align: center;
+  margin: 0 0 20px;
+
+  @media (max-width: $mobile-width-only) {
+    br {
+      display: none;
+    }
+  }
+
+  @media (min-width: $tablet-width) {
+    @include big;
+    padding: 0 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    text-align: start;
+    margin: 0 0 40px;
+    padding: 0;
+  }
+}
+
+.promo-card__order-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: span 2;
+    align-items: start;
+    margin-bottom: 13px;
+  }
+}
+
+.promo-card__old-price {
+  display: block;
+  font-size: 16px;
+  line-height: 32px;
+  color: $base-primary;
+  margin-right: 6px;
+}
+
+.promo-card__new-price {
+  @include big;
+  font-weight: 600;
+  display: block;
+  margin-right: 20px;
+}
+
+.promo-card__button {
+  background-color: $base-primary;
+  color: $base-white;
+  padding: 8px 20px;
+  border-radius: 4px;
+}
