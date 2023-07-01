@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Drink2Go</title>
-    <link rel="stylesheet" href="css/min.style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preload" href="/fonts/Montserrat-Regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="/fonts/Montserrat-Medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="/fonts/Montserrat-SemiBold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
@@ -21,8 +21,8 @@
     <header class="header">
       <a class="header__logo" href="#">
         <picture>
-          <source media="(min-width: 1440px)" srcset="img/logo/logo-big.svg">
-          <source media="(min-width: 768px)" srcset="img/logo/logo-middle.svg">
+          <source media="(min-width: 1440px)" srcset="img/logo/logo-big.svg" width="170" height="36">
+          <source media="(min-width: 768px)" srcset="img/logo/logo-middle.svg" width="82" height="36">
           <img class="header__logo__image" src="img/logo/logo-small.svg" width="32" height="36" alt="Логотип интернет-магазина Дринк ту гоу.">
         </picture>
         <span class="header__logo-text">Интернет-магазин кофейных напитков</span>
@@ -31,41 +31,39 @@
         <button class="nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
-        <div class="nav__wrapper">
-          <ul class="nav__list site-list">
-            <li class="nav__item">
-              <a class="nav__link nav__link--current">Главная</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">Каталог</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">Доставка</a>
-            </li>
-            <li class="nav__item">
-              <a class="nav__link" href="#">О нас</a>
-            </li>
-          </ul>
-          <ul class="nav__list user-list">
-            <li class="user-list__item">
-              <a class="user-list__link user-list__link--entrance">
-                <svg class="user-list__account" width="16" height="16" aria-hidden="true" focusable="false" aria-label="Войти в личный кабинет">
-                  <use href="img/icons/stack.svg#user"></use>
-                </svg>
-                <span class="visually-hidden">Войти</span>
-              </a>
-            </li>
-            <li class="user-list__item">
-              <a class="user-list__link user-list__link--basket">
-                <svg class="user-list__basket" width="16" height="16" aria-hidden="true" focusable="false" aria-label="Просмотреть корзину">
-                  <use href="img/icons/stack.svg#basket-nav"></use>
-                </svg>
-                <span class="visually-hidden">Корзина</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="nav__list nav__wrapper">
+          <li class="nav__item nav__item--current">
+            <a class="nav__link nav__link--current">Главная</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Каталог</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">Доставка</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#">О нас</a>
+          </li>
+        </ul>
       </nav>
+        <ul class="user-list">
+          <li class="user-list__item">
+            <a class="user-list__link user-list__link--entrance">
+              <svg class="user-list__icon" width="16" height="16" aria-hidden="true" focusable="false" aria-label="Войти в личный кабинет">
+                <use href="img/icons/stack.svg#user"></use>
+              </svg>
+              <span class="user-list__text">Войти</span>
+            </a>
+          </li>
+          <li class="user-list__item basket">
+            <a class="user-list__link user-list__link--basket">
+              <svg class="user-list__icon" width="16" height="16" aria-hidden="true" focusable="false" aria-label="Просмотреть корзину">
+                <use href="img/icons/stack.svg#basket-nav"></use>
+              </svg>
+              <span class="user-list__text">Корзина</span>
+            </a>
+          </li>
+        </ul>
     </header>
 
     <main class="main-page">

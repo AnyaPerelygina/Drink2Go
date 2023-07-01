@@ -1,0 +1,55 @@
+.user-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: end;
+  padding-right: 60px;
+  margin-left: auto;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 39px;
+    gap: 17px;
+  }
+}
+
+.user-list__item {
+  padding: 18px 22px;
+
+  @media (min-width: $tablet-width) {
+    padding: 30px 22px 26px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 26px 22px;
+  }
+}
+
+.user-list__link {
+  @media (min-width: $desktop-width) {
+    display: inline;
+    position: relative;
+  }
+}
+
+.user-list__icon {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 4px;
+    left: 0;
+  }
+}
+
+.user-list__text {
+  @include small;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-left: 25px;
+
+  @media (max-width: $tablet-width-only) {
+    display: none;
+  }
+}

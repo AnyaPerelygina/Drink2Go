@@ -1,6 +1,7 @@
 /* GLOBAL */
 @import "global/variables.scss";
 @import "global/global.scss";
+@import "global/mixin.scss";
 @import "global/fonts.scss";
 @import "global/utils.scss";
 
@@ -32,7 +33,6 @@
 @import "blocks/promo.scss";
 @import "blocks/range.scss";
 @import "blocks/select.scss";
-@import "blocks/site-list.scss";
 @import "blocks/slider.scss";
 @import "blocks/social-list.scss";
 @import "blocks/user-list.scss";
