@@ -1,0 +1,14 @@
+.social-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px
+}
+
+.social-list__link-icon {
+  display: block;
+  position: relative;
+  top: 8px;
+  right: 8px;
+}

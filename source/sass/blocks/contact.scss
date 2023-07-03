@@ -1,0 +1,20 @@
+.contact__item {
+  @include middle;
+  margin-bottom: 11px;
+}
+
+.contact__item--point-adress {
+  background-image: url("/img/icons/stack.svg#map-point");
+  background-size: 13px 16px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  padding-left: 19px;
+}
+
+.contact__item--phone {
+  background-image: url("/img/icons/stack.svg#phone");
+  background-size: 13px 16px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  padding-left: 19px;
+}

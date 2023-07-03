@@ -1,0 +1,45 @@
+.footer-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.footer-nav__list {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.footer-nav__item {
+  width: 100%;
+  padding: 20px;
+  border-bottom: 1px solid $base-secondary;
+  text-align: start;
+}
+
+.footer-nav__title {
+  @include middle;
+  letter-spacing: 0.02em;
+  color: $base-primary;
+  font-weight: 700;
+  margin: 0 0 12px;
+}
+
+.footer-nav__list__item {
+  padding: 8px 0;
+  text-transform: uppercase;
+  font-family: "Montserrat",sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.footer-nav__title--contact {
+  margin-bottom: 21px;
+}
+
+.footer-nav__item--contact {
+  padding: 20px 20px 10px;
+}

@@ -1,0 +1,15 @@
+.copyright {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 14px 0;
+}
+
+.copyright__text,
+.copyright__link {
+  @include small;
+  color: $primary-grey;
+}
+
+.copyright__link--icon {
+  top: 5px;
+}
