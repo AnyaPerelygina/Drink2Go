@@ -1,7 +1,15 @@
 .promo {
   position: relative;
-  min-height: 714px;
+  height: 100%;
   z-index: 0;
+
+  @media (min-width: $tablet-width) {
+    min-height: 850px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 714px;
+  }
 }
 
 .promo__list {
@@ -43,5 +51,48 @@
 
   @media (min-width: $desktop-width) {
     height: 714px;
+  }
+}
+
+.promo__button {
+  position: absolute;
+  top: 23px;
+  bottom: 0;
+  height: 100%;
+  width: 20px;
+  border: none;
+  z-index: 2;
+  color: $base-primary;
+  background-color: transparent;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 20px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 299px;
+    width: 13px;
+    height: 13px;
+    border-top: 2px solid $base-primary;
+    border-right: 2px solid $base-primary;
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      top: 290px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &::after {
+      top: 330px;
+    }
   }
 }

@@ -1,7 +1,7 @@
 .promo-card {
   display: grid;
   justify-items: center;
-  padding: 20px 20px 60px;
+  padding: 20px 21px 60px;
 
   @media (min-width: $tablet-width) {
     padding: 60px 20px 0;
@@ -15,7 +15,7 @@
 }
 
 .promo-card__can {
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 
   @media (min-width: $tablet-width) {
     order: 1;

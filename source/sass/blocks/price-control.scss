@@ -1,0 +1,32 @@
+.price-conrol {
+  width: 280px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1px 1px 1px 3px;
+  margin-bottom: 30px;
+}
+
+.price-control__input {
+  @include global;
+  font-weight: 500;
+  font-family: inherit;
+  width: 118px;
+  height: 40px;
+  border: 2px solid $primary-lighter;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.price-control__input--from {
+  color: $primary-grey;
+}
+
+.price-conrol__line {
+  color: $primary-grey;
+  padding-top: 3px;
+}
+
+.price-control__input--to {
+  color: $base-black;
+}

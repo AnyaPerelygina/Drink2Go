@@ -1,0 +1,28 @@
+.filter-constructor__title {
+  font-weight: 600;
+  position: relative;
+  width: 100%;
+  text-align: left;
+}
+
+.filter-constructor__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: start;
+  padding-top: 20px;
+  padding-bottom: 34px;
+}
+
+.filter-constructor__list--milk {
+  padding-left: 37px;
+}
+
+.filter-constructor__item {
+  position: relative;
+  margin-left: -21px;
+}
+
+.filter-constructor__list--origin {
+  padding-left: 55px;
+}

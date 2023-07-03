@@ -149,23 +149,23 @@
 
       <section class="advantages">
         <h2 class="advantages__title">Преимущества</h2>
-        <span class="advantages__title-text">Главные причины выбрать Drink2Go</span>
+        <p class="advantages__title-text">Главные причины выбрать Drink2Go</p>
         <ul class="advantages__list">
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--speed">
             <h3 class="advantages__item-title">Скорость</h3>
             <p class="advantages__item-text">Готовый напиток всегда под рукой — просто открой банку</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--pocket">
             <h3 class="advantages__item-title">Удобство</h3>
-            <p class="advantages__item-text">Легко помещается и в карман, и в маленькую сумочку</p>
+            <p class="advantages__item-text">Легко помещается и в карман,<br> и в маленькую сумочку</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--flash">
             <h3 class="advantages__item-title">Бодрость</h3>
             <p class="advantages__item-text">Сбалансированная доза кофеина даст мощный заряд энергии</p>
           </li>
-          <li class="advantages__item">
+          <li class="advantages__item advantages__item--leaf">
             <h3 class="advantages__item-title">Экологичность</h3>
-            <p class="advantages__item-text">Вся упаковка сделана из перерабатываемых материалов</p>
+            <p class="advantages__item-text">Вся упаковка сделана<br> из перерабатываемых материалов</p>
           </li>
         </ul>
       </section>
@@ -177,142 +177,146 @@
         <div class="catalog__wrapper">
           <h3 class="visually-hidden">Фильтры для поиска</h3>
           <form class="catalog__form" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="catalog__form price-control">
-              <legend class="price-control__title">Цена</legend>
+            <fieldset class="catalog__form filter-constructor price-control">
+              <legend class="filter-constructor__title">Цена</legend>
 
               <div class="range">
                 <div class="range__scale">
-                  <div class="range__bar" style="left: 0; width: 280px;">
-                    <button type="button" class="range__toggle toggle-min"></button>
-                    <button type="button" class="range__toggle toggle-max"></button>
+                  <div class="range__bar">
+                    <button type="button" class="range__toggle range__toggle--min"></button>
+                    <button type="button" class="range__toggle range__toggle--max"></button>
                   </div>
                 </div>
               </div>
 
-              <label class="price-control__label">
-                <input
-                  class="price-control__input price-from"
-                  placeholder="0"
-                  name="price-filter">
-              </label>
-              -
-              <label class="price-control__label">
-                <input
-                  class="price-control__input price-to"
-                  placeholder="900"
-                  name="price-filter"
-                  value="900">
-              </label>
+              <div class="price-conrol">
+                <label class="price-control__label">
+                  <input
+                    class="price-control__input price-control__input--from"
+                    type="text"
+                    placeholder="0"
+                    name="price-filter"
+                    value="0">
+                </label>
+                <b class="price-conrol__line">_</b>
+                <label class="price-control__label">
+                  <input
+                    class="price-control__input price-control__input--to"
+                    type="text"
+                    placeholder="123"
+                    name="price-filter"
+                    value="123">
+                </label>
+              </div>
             </fieldset>
 
-            <fieldset class="catalog__form filter-milk">
-              <legend class="filter-milk__title">Наличие молока</legend>
-              <ul class="filter-milk__list">
-                <li class="filter-milk__item">
-                  <label class="control">
+            <fieldset class="catalog__form filter-constructor">
+              <legend class="filter-constructor__title">Наличие молока</legend>
+              <ul class="filter-constructor__list filter-constructor__list--milk">
+                <li class="filter-constructor__item">
+                  <label class="control control__milk">
                     <input
                       class="control__input visually-hidden"
                       type="radio"
                       name="catalog-group"
                       value="unimportant"
                       checked>
-                    <span class="control__mark"></span>
-                    <span class="control__customLabel">Неважно</span>
+                    <span class="control__mark control__mark--radio"></span>
+                    <span class="control__text">Неважно</span>
                   </label>
                 </li>
-                <li class="filter-milk__item">
-                  <label class="control">
+                <li class="filter-constructor__item">
+                  <label class="control control__milk">
                     <input
                       class="control__input visually-hidden"
                       type="radio"
                       name="catalog-group"
                       value="animalMilk">
-                    <span class="control__mark"></span>
-                    <span class="control__customLabel">Только животное</span>
+                    <span class="control__mark control__mark--radio"></span>
+                    <span class="control__text">Только животное</span>
                   </label>
                 </li>
-                <li class="filter-milk__item">
-                  <label class="control">
+                <li class="filter-constructor__item">
+                  <label class="control control__milk">
                     <input
                       class="control__input visually-hidden"
                       type="radio"
                       name="catalog-group"
                       value="vegetableMilk">
-                    <span class="control__mark"></span>
-                    <span class="control__customLabel">Только растительное</span>
+                    <span class="control__mark control__mark--radio"></span>
+                    <span class="control__text">Только растительное</span>
                   </label>
                 </li>
-                <li class="filter-milk__item">
-                  <label class="control">
+                <li class="filter-constructor__item">
+                  <label class="control control__milk">
                     <input
                       class="control__input visually-hidden"
                       type="radio"
                       name="catalog-group"
-                      value="noMilk">
-                    <span class="control__mark"></span>
-                    <span class="control__customLabel">Без молока</span>
+                      value="noMilk" disabled>
+                    <span class="control__mark control__mark--radio"></span>
+                    <span class="control__text">Без молока</span>
                   </label>
                 </li>
               </ul>
             </fieldset>
 
-            <fieldset class="catalog__form filter-origin">
-              <legend class="filter-origin__title">Страна произрастания</legend>
-              <ul class="filter-origin__list">
-                <li class="filter-origin__item">
-                  <label class="control">
+            <fieldset class="catalog__form filter-constructor">
+              <legend class="filter-constructor__title">Страна произрастания</legend>
+              <ul class="filter-constructor__list filter-constructor__list--origin">
+                <li class="filter-constructor__item">
+                  <label class="control control__origin">
                     <input
                       class="control__input visually-hidden"
-                      type="radio"
+                      type="checkbox"
                       name="catalog__group"
-                      value="Brazil"
-                      checked>
-                    <span class="control__сustomMark"></span>
-                    <span class="control__customLabel">Бразилия</span>
+                      value="Brazil" checked>
+                    <span class="control__customMark"></span>
+                    <span class="control__text">Бразилия</span>
                   </label>
                 </li>
-                <li class="filter-origin__item">
-                  <label class="control">
+                <li class="filter-constructor__item">
+                  <label class="control control__origin">
                     <input
                       class="control__input visually-hidden"
-                      type="radio"
+                      type="checkbox"
                       name="catalog__group"
                       value="Ethiopia">
                     <span class="control__customMark"></span>
-                    <span class="control__customLabel">Эфиопия</span>
+                    <span class="control__text">Эфиопия</span>
                   </label>
                 </li>
-                <li class="filter-origin__item">
-                  <label class="control">
+                <li class="filter-constructor__item">
+                  <label class="control control__origin">
                     <input
                       class="control__input visually-hidden"
-                      type="radio"
+                      type="checkbox"
                       name="catalog__group"
                       value="Colombia">
                     <span class="control__customMark"></span>
-                    <span class="control__customLabel">Колумбия</span>
+                    <span class="control__text">Колумбия</span>
                   </label>
                 </li>
-                <li class="filter-origin__item">
-                  <label class="control">
+                <li class="filter-constructor__item">
+                  <label class="control control__origin">
                     <input
                       class="control__input visually-hidden"
-                      type="radio"
+                      type="checkbox"
                       name="catalog__group"
                       value="CostaRica">
                     <span class="control__customMark"></span>
-                    <span class="control__customLabel">Коста-Рика</span>
+                    <span class="control__text">Коста-Рика</span>
                   </label>
                 </li>
-                <li class="filter-origin__item">
-                  <label class="control">
+                <li class="filter-constructor__item">
+                  <label class="control control__origin">
                     <input
                       class="control__input visually-hidden"
-                      type="radio"
+                      type="checkbox"
                       name="catalog__group"
-                      value="Peru">
+                      value="Peru" disabled>
                     <span class="control__customMark"></span>
-                    <span class="control__customLabel">Перу</span>
+                    <span class="control__text">Перу</span>
                   </label>
                 </li>
               </ul>
@@ -328,22 +332,21 @@
                 Сбросить
               </button>
             </div>
+
+            <div class="catalog__form select">
+              <span class="select__title">Сортировка:</span>
+              <select class="select__control" aria-label="Сортировка">
+                <option value="cheap">по умолчанию</option>
+                <option value="cheap">Сначала дешевые</option>
+                <option value="expensive">Сначала дорогое</option>
+                <option value="popular">Сначала популярное</option>
+              </select>
+            </div>
           </form>
-        </div>
 
-        <div class="catalog__form drinks">
+        <div class="drinks">
           <h3 class="visually-hidden">Каталог кофейных напитков</h3>
-          <div class="drinks__select select">
-            <span class="select__title">Сортировка:</span>
-            <select class="select__control" aria-label="Сортировка">
-              <option value="cheap">По умолчанию</option>
-              <option value="cheap">Сначала дешевые</option>
-              <option value="expensive">Сначала дорогое</option>
-              <option value="popular">Сначала популярное</option>
-            </select>
-          </div>
-
-          <ul class="catalog__form drinks-list">
+          <ul class="drinks-list">
             <li class="drinks-list__item card">
               <a class="card__link" href="#">
                 <picture>

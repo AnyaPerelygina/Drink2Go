@@ -1,0 +1,14 @@
+.button-next {
+  right: 0;
+
+  &::after {
+    right: 7px;
+    transform: rotate(46deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      right: 38px;
+    }
+  }
+}

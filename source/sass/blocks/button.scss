@@ -1,0 +1,25 @@
+.catalog__form .button {
+  width: 280px;
+  gap: 20px;
+  margin-top: -5px;
+  margin-left: 3px;
+  margin-bottom: 37px;
+}
+
+.button__apply {
+  @include global;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: $primary-lighter;
+  color: $base-white;
+}
+
+.button__throw-off {
+  @include global;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: $base-white;
+  color: $primary-lighter;
+}

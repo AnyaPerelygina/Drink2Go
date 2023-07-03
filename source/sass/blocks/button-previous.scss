@@ -1,0 +1,14 @@
+.button-previous {
+  left: 0;
+
+  &::after {
+    left: 7px;
+    transform: rotate(226deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    &::after {
+      left: 38px;
+    }
+  }
+}
