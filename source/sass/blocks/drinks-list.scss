@@ -1,0 +1,19 @@
+.drinks-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+  gap: 20px;
+}
+
+.drinks-list__item {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  background-color: $base-white;
+  height: 420px;
+  width: 280px;
+  margin: 0;
+  padding: 40px 20px 20px;
+  border-radius: 3px;
+}
