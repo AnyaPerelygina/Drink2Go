@@ -1,5 +1,4 @@
 .nav {
-
   @media (min-width: $tablet-width) {
     width: 397px;
     margin-left: auto;
@@ -122,6 +121,7 @@
     padding: 16px 20px;
     border-bottom: 1px solid $base-secondary;
     background-color: $base-white;
+    text-align: center;
   }
 
   @media (min-width: $tablet-width) {

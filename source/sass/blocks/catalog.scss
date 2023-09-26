@@ -1,6 +1,12 @@
 .catalog {
   background-color: $bg-light-grey;
   padding: 50px 20px 20px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    padding: 100px 40px 20px;
+  }
 }
 
 .catalog__title {
@@ -17,18 +23,46 @@
 
 .catalog__title-text {
   @include large;
+  text-align: center;
   font-weight: 700;
+  margin-bottom: 21px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 42px;
+    line-height: 64px;
+  }
 }
 
 .catalog__wrapper {
-  margin-top: 21px;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-areas: 
+    "A B B"
+    "A C C"
+    "A C C"
+    "D D D";
+  }
 }
 
 .catalog__form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
   border: none;
-  margin: 0;
   padding: 0;
+
+  @media (min-width: $desktop-width) {
+    width: 318px;
+    grid-area: A;
+    margin: 20px 0 0 0;
+  }
+}
+
+.catalog__form .button {
+  min-width: 280px;
+  width: 100%;
 }

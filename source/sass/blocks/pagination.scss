@@ -4,6 +4,13 @@
   flex-wrap: wrap;
   gap: 20px;
   padding: 40px 0 24px;
+  margin: 0 auto;
+
+  @media (min-width: $desktop-width) {
+    grid-area: D;
+    grid-column: span 3;
+    margin: 0 0 0 auto;
+  }
 }
 
 .pagination__item {
@@ -25,7 +32,7 @@
 }
 
 .pagination__link--back {
-  background-image: url("/img/icons/stack.svg#pagination-left");
+  background-image: url("../../img/sprite/pagination-left.svg");
   background-size: 10px 10px;
   background-repeat: no-repeat;
   background-position: center;
@@ -39,7 +46,7 @@
 }
 
 .pagination__link--forward {
-  background-image: url("/img/icons/stack.svg#pagination-right");
+  background-image: url("../../img/sprite/pagination-right.svg");
   background-size: 10px 10px;
   background-repeat: no-repeat;
   background-position: center;

@@ -1,4 +1,11 @@
 .drinks {
   @include reset;
-  display:flex;
+  display: flex;
+
+  @media (min-width: $desktop-width) {
+    margin-left: 29px;
+    max-width: 1030px;
+    grid-area: C;
+    grid-column: span 2;
+  }
 }

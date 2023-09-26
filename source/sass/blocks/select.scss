@@ -6,6 +6,12 @@
   justify-content: center;
   gap: 12px;
   margin: 0 0 15px 7px;
+
+  @media (min-width: $desktop-width) {
+    grid-area: B;
+    grid-column: span 2;
+    margin: 35px -35px 28px auto;
+  }
 }
 
 .select__title {
@@ -26,7 +32,7 @@
   border-radius: 4px;
   appearance: none;
   background-color: transparent;
-  background-image: url("/img/icons/stack.svg#sorting");
+  background-image: url("../../img/sprite/sorting.svg");
   background-size: 12px 10px;
   background-repeat: no-repeat;
   background-position: right 10px center;

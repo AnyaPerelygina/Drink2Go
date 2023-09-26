@@ -4,16 +4,45 @@
   box-sizing: border-box;
 }
 
+html,
 body {
-  height: 100%;
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-family: $main-font;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: $base-black;
+  scroll-behavior: smooth;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  // оптимизация выравнивания шрифта относительно центра строки
+  text-rendering: optimizeLegibility;
+  // если по прежнему есть проблемы с выравниванием
+  // https://transfonter.org/ - включите настройку https://prnt.sc/12rnt6g и переконвертируйте шрифт
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  font-family: $main-font;
   font-style: normal;
   font-size: 16px;
   line-height: 24px;
-  text-align: center;
-  color: #333333;
-  background-color: #ffffff;
+  text-align: right;
+  color: $base-black;
+  background-color: $base-white;
 }
 
 ul {
@@ -24,16 +53,20 @@ ul {
 
 a {
   text-decoration: none;
-  color: #333333;
+  color: $base-black;
 }
 
 img {
   max-width: 100%;
   height: auto;
   display: block;
+  object-fit: cover;
 }
 
-input,
-button {
-  font-family: inherit;
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  appearance: none;
+  user-select: none;
 }

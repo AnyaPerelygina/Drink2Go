@@ -10,3 +10,31 @@
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+.scroll-lock-ios {
+  position: fixed;
+
+  overflow: hidden;
+}
+
+.scroll-lock {
+  overflow: hidden;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.no-transition {
+  /* stylelint-disable-next-line */
+  transition: none !important;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: none;
+}

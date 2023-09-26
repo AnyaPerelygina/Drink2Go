@@ -1,9 +1,14 @@
+/* VENDOR */
+@import "vendor/swiper.scss";
+@import "vendor/normalize.scss";
+@import "vendor/leaflet.scss";
+
 /* GLOBAL */
 @import "global/variables.scss";
-@import "global/global.scss";
 @import "global/mixin.scss";
 @import "global/fonts.scss";
 @import "global/utils.scss";
+@import "global/global.scss";
 
 /* BLOCKS */
 @import "blocks/advantages.scss";
