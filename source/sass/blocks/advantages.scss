@@ -54,7 +54,9 @@
   gap: 32px;
 
   @media (min-width: $tablet-width) {
-    flex-direction: row;
+    // flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(2, auto);
     gap: 0;
     grid-column-gap: 30px;
     grid-row-gap: 50px;
@@ -63,6 +65,8 @@
   }
 
   @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
     grid-column-gap: 0;
     grid-row-gap: 0;
     padding: 0 30px 0;

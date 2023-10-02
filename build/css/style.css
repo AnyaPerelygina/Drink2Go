@@ -2176,10 +2176,10 @@ button,
 }
 @media (min-width: 768px) {
   .advantages__list {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[2];
+    grid-template-columns: repeat(2, auto);
     gap: 0;
     grid-column-gap: 30px;
     grid-row-gap: 50px;
@@ -2189,6 +2189,13 @@ button,
 }
 @media (min-width: 1440px) {
   .advantages__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     grid-column-gap: 0;
     grid-row-gap: 0;
     padding: 0 30px 0;
@@ -2439,6 +2446,11 @@ button,
   font-weight: 600;
   padding: 1px 54px 0 0;
 }
+@media (min-width: 768px) {
+  .card__price {
+    margin: 0 auto 0 0;
+  }
+}
 
 .card__button {
   min-width: 141px;
@@ -2486,7 +2498,7 @@ button,
   font-weight: 700;
   margin-bottom: 21px;
 }
-@media (min-width: 1440px) {
+@media (min-width: 768px) {
   .catalog__title-text {
     font-size: 42px;
     line-height: 64px;
@@ -2525,6 +2537,15 @@ button,
   border: none;
   padding: 0;
 }
+@media (min-width: 768px) {
+  .catalog__form {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[3];
+    grid-template-columns: repeat(3, auto);
+    margin: 0 auto;
+  }
+}
 @media (min-width: 1440px) {
   .catalog__form {
     width: 318px;
@@ -2536,6 +2557,15 @@ button,
 .catalog__form .button {
   min-width: 280px;
   width: 100%;
+}
+@media (min-width: 768px) {
+  .catalog__form .button {
+    -ms-grid-column-span: 3;
+    grid-column: span 3;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .contact__item {
@@ -2682,6 +2712,13 @@ button,
   margin-right: auto;
   padding: 14px 0;
 }
+@media (min-width: 768px) {
+  .copyright {
+    -ms-grid-column-span: 3;
+    grid-column: span 3;
+    margin: 0 auto;
+  }
+}
 
 .copyright__text,
 .copyright__link {
@@ -2704,6 +2741,14 @@ button,
       -ms-flex-pack: center;
           justify-content: center;
   gap: 20px;
+}
+@media (min-width: 768px) {
+  .drinks-list {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[2];
+    grid-template-columns: repeat(2, auto);
+  }
 }
 @media (min-width: 1440px) {
   .drinks-list {
@@ -2750,6 +2795,18 @@ button,
     grid-area: C;
     -ms-grid-column-span: 2;
     grid-column: span 2;
+  }
+}
+
+@media (min-width: 768px) {
+  .filter-constructor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -2801,6 +2858,14 @@ button,
       -ms-flex-pack: start;
           justify-content: flex-start;
 }
+@media (min-width: 768px) {
+  .footer-nav {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (auto)[3];
+    grid-template-columns: repeat(3, auto);
+  }
+}
 
 .footer-nav__list {
   display: -webkit-box;
@@ -2818,6 +2883,11 @@ button,
   padding: 20px;
   border-bottom: 1px solid #F0EBFF;
   text-align: start;
+}
+@media (min-width: 768px) {
+  .footer-nav__item {
+    border-bottom: none;
+  }
 }
 
 .footer-nav__title {
@@ -2862,6 +2932,11 @@ button,
           justify-content: space-between;
   border-bottom: 1px solid #F0EBFF;
   padding: 22px 20px;
+}
+@media (min-width: 768px) {
+  .footer__wrapper {
+    border-bottom: none;
+  }
 }
 
 @media (max-width: 1439px) {
@@ -3122,6 +3197,11 @@ button,
   padding: 40px 0 24px;
   margin: 0 auto;
 }
+@media (min-width: 768px) {
+  .pagination {
+    margin: 0 0 0 auto;
+  }
+}
 @media (min-width: 1440px) {
   .pagination {
     grid-area: D;
@@ -3162,6 +3242,11 @@ button,
   background-position: center;
   cursor: pointer;
 }
+@media (min-width: 768px) {
+  .pagination__link--back {
+    background-image: none;
+  }
+}
 
 @media (max-width: 767px) {
   .pagination__link--text {
@@ -3175,6 +3260,11 @@ button,
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+}
+@media (min-width: 768px) {
+  .pagination__link--forward {
+    background-image: none;
+  }
 }
 
 .price-conrol {
@@ -3604,6 +3694,13 @@ button,
           justify-content: center;
   gap: 12px;
   margin: 0 0 15px 7px;
+}
+@media (min-width: 768px) {
+  .select {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
 }
 @media (min-width: 1440px) {
   .select {

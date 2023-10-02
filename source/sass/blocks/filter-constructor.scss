@@ -1,3 +1,10 @@
+.filter-constructor {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .filter-constructor__title {
   font-weight: 600;
   position: relative;

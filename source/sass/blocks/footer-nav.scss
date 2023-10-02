@@ -3,6 +3,11 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: flex-start;
+
+  @media (min-width: $tablet-width) {
+    display: grid; 
+    grid-template-columns: repeat(3, auto);
+  }
 }
 
 .footer-nav__list {
@@ -16,6 +21,10 @@
   padding: 20px;
   border-bottom: 1px solid $base-secondary;
   text-align: start;
+
+  @media (min-width: $tablet-width) {
+    border-bottom: none;;
+  }
 }
 
 .footer-nav__title {

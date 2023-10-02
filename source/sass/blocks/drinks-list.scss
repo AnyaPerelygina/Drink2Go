@@ -5,6 +5,11 @@
   justify-content: center;
   gap: 20px;
 
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+
   @media (min-width: $desktop-width) {
     gap: 29px;
   }

@@ -27,7 +27,7 @@
   font-weight: 700;
   margin-bottom: 21px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 42px;
     line-height: 64px;
   }
@@ -55,6 +55,12 @@
   border: none;
   padding: 0;
 
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    margin: 0 auto;
+  }
+
   @media (min-width: $desktop-width) {
     width: 318px;
     grid-area: A;
@@ -65,4 +71,9 @@
 .catalog__form .button {
   min-width: 280px;
   width: 100%;
+
+  @media (min-width: $tablet-width) {
+    grid-column: span 3;
+    justify-content: center;
+  }
 }

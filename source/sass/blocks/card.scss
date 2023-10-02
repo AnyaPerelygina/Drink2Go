@@ -41,6 +41,10 @@
   @include reset;
   font-weight: 600;
   padding: 1px 54px 0 0;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 auto 0 0;
+  }
 }
 
 .card__button {

@@ -6,6 +6,10 @@
   padding: 40px 0 24px;
   margin: 0 auto;
 
+  @media (min-width: $tablet-width) {
+    margin: 0 0 0 auto;
+  }
+
   @media (min-width: $desktop-width) {
     grid-area: D;
     grid-column: span 3;
@@ -37,6 +41,10 @@
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
 }
 
 .pagination__link--text {
@@ -51,4 +59,8 @@
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    background-image: none;
+  }
 }

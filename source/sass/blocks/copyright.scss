@@ -2,6 +2,11 @@
   margin-left: auto;
   margin-right: auto;
   padding: 14px 0;
+
+  @media (min-width: $tablet-width) {
+    grid-column: span 3;
+    margin:  0 auto;
+  }
 }
 
 .copyright__text,
