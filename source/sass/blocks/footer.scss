@@ -1,4 +1,11 @@
 .footer__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.footer__header {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -8,6 +15,11 @@
 
   @media (min-width: $tablet-width) {
     border-bottom: none;;
+  }
+
+  @media (min-width: $desktop-width) {
+    flex-direction: column;
+    justify-content: start;
   }
 }
 

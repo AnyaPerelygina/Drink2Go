@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {navToggle} from './modules/nav/toggle';
+import {createPromoSlider} from './modules/promo/promo-slider';
 import {initLeaflet} from './modules/leaflet/leaflet';
 
 // ---------------------------------
@@ -16,6 +17,8 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
 
+  // navToggle();
+  createPromoSlider();
   initLeaflet();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

@@ -12,6 +12,8 @@
 
   @media (min-width: $desktop-width) {
     gap: 29px;
+    display: flex;
+    flex-direction: row;
   }
 }
 

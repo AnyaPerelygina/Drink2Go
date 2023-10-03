@@ -3,7 +3,11 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 40px
+  gap: 40px;
+
+  @media (min-width: $desktop-width) {
+    justify-content: start;
+  }
 }
 
 .social-list__link-icon {

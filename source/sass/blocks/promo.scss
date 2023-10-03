@@ -29,7 +29,6 @@
 }
 
 .promo__card--lavender {
-  display: none;
   background-color: $bg-lavender-latte;
 
   @media (min-width: $tablet-width) {
@@ -42,7 +41,6 @@
 }
 
 .promo__card--espresso {
-  display: none;
   background-color: $bg-espresso;
 
   @media (min-width: $tablet-width) {
@@ -94,5 +92,25 @@
     &::after {
       top: 330px;
     }
+  }
+}
+
+.swiper-pagination-horizontal .swiper-pagination-bullet {
+  @media (min-width: $desktop-width) {
+    width: 62px;
+    height: 4px;
+    border-radius: 0;
+    background-color: $base-white;
+    opacity: 1;
+
+    &-active {
+      background-color: $base-primary;
+    }
+  }
+}
+
+.promo__pagination {
+  @media (min-width: 320px) and (max-width: 1439px) {
+    display: none;
   }
 }

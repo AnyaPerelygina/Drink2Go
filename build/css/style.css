@@ -2551,6 +2551,13 @@ button,
     width: 318px;
     grid-area: A;
     margin: 20px 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
@@ -2708,15 +2715,14 @@ button,
 }
 
 .copyright {
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
   padding: 14px 0;
+  text-align: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 1440px) {
   .copyright {
-    -ms-grid-column-span: 3;
-    grid-column: span 3;
-    margin: 0 auto;
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
   }
 }
 
@@ -2753,6 +2759,13 @@ button,
 @media (min-width: 1440px) {
   .drinks-list {
     gap: 29px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -2917,7 +2930,19 @@ button,
   padding: 20px 20px 10px;
 }
 
-.footer__wrapper {
+@media (min-width: 1440px) {
+  .footer__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+.footer__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2934,8 +2959,19 @@ button,
   padding: 22px 20px;
 }
 @media (min-width: 768px) {
-  .footer__wrapper {
+  .footer__header {
     border-bottom: none;
+  }
+}
+@media (min-width: 1440px) {
+  .footer__header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
   }
 }
 
@@ -3563,7 +3599,6 @@ button,
 }
 
 .promo__card--lavender {
-  display: none;
   background-color: #EAE6FC;
 }
 @media (min-width: 768px) {
@@ -3578,7 +3613,6 @@ button,
 }
 
 .promo__card--espresso {
-  display: none;
   background-color: #E5E6E8;
 }
 @media (min-width: 768px) {
@@ -3631,6 +3665,25 @@ button,
 @media (min-width: 1440px) {
   .promo__button::after {
     top: 330px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .swiper-pagination-horizontal .swiper-pagination-bullet {
+    width: 62px;
+    height: 4px;
+    border-radius: 0;
+    background-color: #FFFFFF;
+    opacity: 1;
+  }
+  .swiper-pagination-horizontal .swiper-pagination-bullet-active {
+    background-color: #7859CF;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1439px) {
+  .promo__pagination {
+    display: none;
   }
 }
 
@@ -3781,6 +3834,13 @@ button,
       -ms-flex-pack: justify;
           justify-content: space-between;
   gap: 40px;
+}
+@media (min-width: 1440px) {
+  .social-list {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+  }
 }
 
 .social-list__link-icon {

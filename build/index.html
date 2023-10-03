@@ -70,10 +70,10 @@
 
     <main>
       <h1 class="visually-hidden">Интернет-магазин кофейных напитков</h1>
-      <section class="promo">
+      <section class="promo swiper">
         <h2 class="visually-hidden">Новинки интернет-магазина</h2>
-        <ul class="promo__list">
-          <li class="promo__card promo__card--flat-white">
+        <ul class="promo__list swiper-wrapper">
+          <li class="promo__card promo__card--flat-white swiper-slide">
             <div class="promo-card">
               <picture class="promo-card__can">
                 <source media="(min-width: 1440px)" type="image/webp" srcset="img/slider/flat_white-desktop@1x.webp, img/slider/flat_white-desktop@2x.webp 2x">
@@ -95,9 +95,9 @@
               </div>
             </div>
           </li>
-          <li class="promo__card promo__card--lavender">
+          <li class="promo__card promo__card--lavender swiper-slide">
             <div class="promo-card">
-              <picture>
+              <picture class="promo-card__can">
                 <source media="(min-width: 1440px)" type="image/webp" srcset="img/slider/lavender-desktop@1x.webp, img/slider/lavender-desktop@2x.webp 2x">
                 <source media="(min-width: 1440px)" srcset="img/slider/lavender-desktop@1x.png, img/slider/lavender-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" type="image/webp" srcset="img/slider/lavender-tablet@1x.webp, img/slider/lavender-tablet@2x.webp 2x">
@@ -117,9 +117,9 @@
               </div>
             </div>
           </li>
-          <li class="promo__card promo__card--espresso">
+          <li class="promo__card promo__card--espresso swiper-slide">
             <div class="promo-card">
-              <picture>
+              <picture class="promo-card__can">
                 <source media="(min-width: 1440px)" type="image/webp" srcset="img/slider/espresso-desktop@1x.webp, img/slider/espresso-desktop@2x.webp 2x">
                 <source media="(min-width: 1440px)" srcset="img/slider/espresso-desktop@1x.png, img/slider/espresso-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" type="image/webp" srcset="img/slider/espresso-tablet@1x.webp, img/slider/espresso-tablet@2x.webp 2x">
@@ -140,13 +140,15 @@
             </div>
           </li>
         </ul>
-        <button class="promo__button button-previous" type="button">
+        <button class="promo__button button-previous swiper-button-prev" type="button">
           <span class="visually-hidden">Предыдущий слайд</span>
         </button>
-        <button class="promo__button button-next" type="button">
+        <button class="promo__button button-next swiper-button-next" type="button">
           <span class="visually-hidden">Следующий слайд</span>
         </button>
-        <div class="promo__pagination"></div>
+        <div class="promo__pagination swiper-pagination"></div>
+        <div class="promo__pagination swiper-pagination"></div>
+        <div class="promo__pagination swiper-pagination"></div>
       </section>
 
       <section class="advantages">
@@ -485,96 +487,99 @@
     <footer class="footer">
       <h2 class="visually-hidden">Полезная информация</h2>
       <div class="footer__wrapper">
-        <a class="footer__logo" href="#">
-          <picture>
-            <source media="(min-width: 768px)" srcset="img/logo/logo-big.svg" width="170" height="36">
-            <!-- <source media="(min-width: 768px)" srcset="img/logo/logo-middle.svg" width="170" height="36"> -->
-            <img class="header__logo__image" src="./img/logo/logo-middle.svg" width="82" height="36" alt="Логотип интернет-магазина Дринк ту гоу.">
-          </picture>
-        </a>
-        <p class="footer__slogan">Интернет-магазин кофейных напитков</p>
-        <ul class="social-list">
-          <li>
-            <a class="social-list__link" href="#">
-              <span class="visually-hidden">Вконтакте</span>
-              <svg class="social-list__link-icon" width="20" height="20" aria-hidden="true" focusable="false" aria-label="Перейти на страницу в Вконтакте">
-                <use href="img/sprite.svg#vk"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a class="social-list__link" href="#">
-              <span class="visually-hidden">Пинтерест</span>
-              <svg class="social-list__link-icon" width="22" height="22" aria-hidden="true" focusable="false" aria-label="Перейти на страницу в Пинтересте">
-                <use href="img/sprite.svg#pinterest"></use>
-              </svg>
-            </a>
-          </li>
-          <li>
-            <a class="social-list__link" href="#">
-              <span class="visually-hidden">Одноклассники</span>
-              <svg class="social-list__link-icon" width="20" height="20" aria-hidden="true" focusable="false" aria-label="Перейти на страницу в Одноклассниках">
-                <use href="img/sprite.svg#ok"></use>
-              </svg>
-            </a>
-          </li>
-        </ul>
+        <div class="footer__header">
+          <a class="footer__logo" href="#">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/logo/logo-big.svg" width="170" height="36">
+              <!-- <source media="(min-width: 768px)" srcset="img/logo/logo-middle.svg" width="170" height="36"> -->
+              <img class="header__logo__image" src="./img/logo/logo-middle.svg" width="82" height="36" alt="Логотип интернет-магазина Дринк ту гоу.">
+            </picture>
+          </a>
+          <p class="footer__slogan">Интернет-магазин кофейных напитков</p>
+          <ul class="social-list">
+            <li>
+              <a class="social-list__link" href="#">
+                <span class="visually-hidden">Вконтакте</span>
+                <svg class="social-list__link-icon" width="20" height="20" aria-hidden="true" focusable="false" aria-label="Перейти на страницу в Вконтакте">
+                  <use href="img/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social-list__link" href="#">
+                <span class="visually-hidden">Пинтерест</span>
+                <svg class="social-list__link-icon" width="22" height="22" aria-hidden="true" focusable="false" aria-label="Перейти на страницу в Пинтересте">
+                  <use href="img/sprite.svg#pinterest"></use>
+                </svg>
+              </a>
+            </li>
+            <li>
+              <a class="social-list__link" href="#">
+                <span class="visually-hidden">Одноклассники</span>
+                <svg class="social-list__link-icon" width="20" height="20" aria-hidden="true" focusable="false" aria-label="Перейти на страницу в Одноклассниках">
+                  <use href="img/sprite.svg#ok"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-nav">
+          <div class="footer-nav__item footer-nav__item--store">
+            <h3 class="footer-nav__title">Интернет-магазин</h3>
+            <ul class="footer-nav__list">
+              <li class="footer-nav__list__item">
+                <a href="#">Каталог</a>
+              </li>
+              <li class="footer-nav__list__item">
+                <a href="#">Доставка</a>
+              </li>
+              <li class="footer-nav__list__item">
+                <a href="#">Способы оплаты</a>
+              </li>
+              <li class="footer-nav__list__item">
+                <a href="#">О нас</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-nav__item footer-nav__item--media">
+            <h3 class="footer-nav__title">Медиа</h3>
+            <ul class="footer-nav__list">
+              <li class="footer-nav__list__item">
+                <a href="#">Блог</a>
+              </li>
+              <li class="footer-nav__list__item">
+                <a href="#">Информация для сми</a>
+              </li>
+              <li class="footer-nav__list__item">
+                <a href="#">Правовая информация</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-nav__item footer-nav__item--contact">
+            <h3 class="footer-nav__title footer-nav__title--contact">Контакты</h3>
+            <ul class="footer-nav__list contact">
+              <li class="contact__item contact__item--point-adress">
+                <a href="#">Санкт-Петербург, набережная реки Карповки, дом 5</a>
+              </li>
+              <li class="contact__item contact__item--phone">
+                <a href="tel:+79999999999">+7 (999) 999-99-99</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
 
-      <div class="footer-nav">
-        <div class="footer-nav__item footer-nav__item--store">
-          <h3 class="footer-nav__title">Интернет-магазин</h3>
-          <ul class="footer-nav__list">
-            <li class="footer-nav__list__item">
-              <a href="#">Каталог</a>
-            </li>
-            <li class="footer-nav__list__item">
-              <a href="#">Доставка</a>
-            </li>
-            <li class="footer-nav__list__item">
-              <a href="#">Способы оплаты</a>
-            </li>
-            <li class="footer-nav__list__item">
-              <a href="#">О нас</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-nav__item footer-nav__item--media">
-          <h3 class="footer-nav__title">Медиа</h3>
-          <ul class="footer-nav__list">
-            <li class="footer-nav__list__item">
-              <a href="#">Блог</a>
-            </li>
-            <li class="footer-nav__list__item">
-              <a href="#">Информация для сми</a>
-            </li>
-            <li class="footer-nav__list__item">
-              <a href="#">Правовая информация</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-nav__item footer-nav__item--contact">
-          <h3 class="footer-nav__title footer-nav__title--contact">Контакты</h3>
-          <ul class="footer-nav__list contact">
-            <li class="contact__item contact__item--point-adress">
-              <a href="#">Санкт-Петербург, набережная реки Карповки, дом 5</a>
-            </li>
-            <li class="contact__item contact__item--phone">
-              <a href="tel:+79999999999">+7 (999) 999-99-99</a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer__copyright copyright">
-          <span class="copyright__text">Разработано в</span>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Cайт HTML Academy">HTML Academy
-            <svg class="copyright__link--icon" width="12" height="16" aria-hidden="true" focusable="false" aria-label="Перейти на сайт HTML Academy">
-              <use href="img/sprite.svg#logo-htmlacademy"></use>
-            </svg>
-          </a>
-        </div>
+      <div class="footer__copyright copyright">
+        <span class="copyright__text">Разработано в</span>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Cайт HTML Academy">HTML Academy
+          <svg class="copyright__link--icon" width="12" height="16" aria-hidden="true" focusable="false" aria-label="Перейти на сайт HTML Academy">
+            <use href="img/sprite.svg#logo-htmlacademy"></use>
+          </svg>
+        </a>
       </div>
     </footer>
-
+    
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>
