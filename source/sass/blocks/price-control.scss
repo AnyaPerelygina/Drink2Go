@@ -5,6 +5,18 @@
   justify-content: space-between;
   padding: 1px 1px 1px 3px;
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 223px;
+    padding: 0;
+    margin-top: -9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 318px;
+    margin-top: -6px;
+    margin-bottom: 0;
+  }
 }
 
 .price-control__input {
@@ -16,6 +28,14 @@
   border: 2px solid $primary-lighter;
   border-radius: 4px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 87px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 134px;
+  }
 }
 
 .price-control__input--from {

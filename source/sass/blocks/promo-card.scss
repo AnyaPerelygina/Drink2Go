@@ -9,8 +9,7 @@
 
   @media (min-width: $desktop-width) {
     grid-template-columns: 1fr 1fr;
-    column-gap: 30px;
-    padding: 32px 140px 73px;
+    padding: 36px 123px;
   }
 }
 
@@ -34,10 +33,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: 600px;
-    height: 600px;
+    width: 622px;
+    height: 593px;
     object-fit: cover;
-    margin-left: -17px;
+    margin-left: -19px;
   }
 }
 
@@ -56,6 +55,8 @@
     grid-row: span 2;
     align-self: center;
     align-items: start;
+    margin-top: -18px;
+    margin-left: -5px;
   }
 }
 

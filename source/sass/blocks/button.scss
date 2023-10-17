@@ -13,6 +13,14 @@
   border-radius: 4px;
   background-color: $primary-lighter;
   color: $base-white;
+
+  @media (min-width: $tablet-width) {
+    padding: 8px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 8px 27px;
+  }
 }
 
 .button__throw-off {
@@ -22,6 +30,14 @@
   border-radius: 4px;
   background-color: $base-white;
   color: $primary-lighter;
+
+  @media (min-width: $tablet-width) {
+    padding: 8px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 8px 34px;
+  }
 }
 
 .button__basket {

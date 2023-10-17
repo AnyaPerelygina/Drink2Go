@@ -9,12 +9,13 @@
 
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
+    margin: 0 0 26px 7px;
   }
 
   @media (min-width: $desktop-width) {
     grid-area: B;
     grid-column: span 2;
-    margin: 35px -35px 28px auto;
+    margin: 36px 1px 28px auto;
   }
 }
 
@@ -22,6 +23,10 @@
   @include global;
   font-weight: 600;
   color: #333333;
+
+  @media (min-width: $tablet-width) {
+    margin-right: -56px;
+  }
 }
 
 .select__control {
@@ -41,4 +46,8 @@
   background-repeat: no-repeat;
   background-position: right 10px center;
   cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    text-align: right;
+  }
 }

@@ -1,5 +1,10 @@
 .range {
   margin-top: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: -3px;
+    margin-bottom: -4px;
+  }
 }
 
 .range__scale {
@@ -11,6 +16,14 @@
   border: 2px solid $primary-grey;
   margin-left: 4px;
   box-sizing: border-box;
+
+  @media (min-width: $tablet-width) {
+    width: 223px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 317px;
+  }
 }
 
 .range__bar {
@@ -19,6 +32,14 @@
   width: 241px;
   background-color: $primary-lighter;
   margin-top: -2px;
+
+  @media (min-width: $tablet-width) {
+    width: 181px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 276px;
+  }
 }
 
 .range__toggle {
@@ -38,4 +59,8 @@
 
 .range__toggle--max {
   right: -16px;
+
+  @media (min-width: $tablet-width) {
+    right: -19px;
+  }
 }

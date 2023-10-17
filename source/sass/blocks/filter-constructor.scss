@@ -2,6 +2,17 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: column;
+
+    &:nth-child(3n) {
+      padding-left: 12px;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    &:nth-child(3n) {
+      padding-left: 0;
+      margin: -14px 0 1px;
+    }
   }
 }
 
@@ -23,6 +34,10 @@
 
 .filter-constructor__list--milk {
   padding-left: 37px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 33px;
+  }
 }
 
 .filter-constructor__item {
@@ -32,4 +47,8 @@
 
 .filter-constructor__list--origin {
   padding-left: 55px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 52px;
+  }
 }

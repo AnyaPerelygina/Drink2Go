@@ -8,6 +8,11 @@
   @media (min-width: $tablet-width) {
     height: 80px;
   }
+
+  @media (min-width: 1600px) {
+    max-width: 1440px;
+    margin: 0 auto;
+  }
 }
 
 .header__logo {
@@ -22,6 +27,17 @@
     display: inherit;
     gap: 20px;
     padding: 22px 40px;
+  }
+
+  img {
+    @media (min-width: $tablet-width) {
+      width: 82px;
+      height: 36px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 170px;
+    }
   }
 }
 

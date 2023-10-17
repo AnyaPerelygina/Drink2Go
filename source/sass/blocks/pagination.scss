@@ -1,19 +1,21 @@
 .pagination {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 20px;
   padding: 40px 0 24px;
   margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     margin: 0 0 0 auto;
+    padding: 70px 0 70px;
   }
 
   @media (min-width: $desktop-width) {
     grid-area: D;
     grid-column: span 3;
-    margin: 0 0 0 auto;
+    margin: 0 75px 0 auto;
+    padding: 58px 0 100px;
   }
 }
 
@@ -24,7 +26,29 @@
   width: 40px;
   display: flex;
   align-items: center;
-  justify-content: center
+  justify-content: center;
+  padding: 8px;
+
+  &:first-child,
+  &:last-child {
+    padding: 15px;
+  }
+
+  &--current {
+    background-color: transparent;
+  }
+
+  @media (min-width: $tablet-width) {
+    &:first-child,
+    &:last-child {
+      padding: 8px 20px;
+      width: auto;
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 8px 20px;
+  }
 }
 
 .pagination__link {

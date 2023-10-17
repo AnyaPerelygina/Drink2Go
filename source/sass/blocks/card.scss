@@ -11,8 +11,6 @@
 .card__product {
   display: block;
   position: relative;
-  // left: 55px;
-  // right: 50%;
 }
 
 .card__title {
@@ -21,6 +19,16 @@
   line-height: 32px;
   font-weight: 700;
   padding: 23px 0 5px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 24px;
+    line-height: 36px;
+    padding: 31px 0 9px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 28px 0 9px;
+  }
 }
 
 .card__description {
@@ -28,6 +36,10 @@
   @include middle;
   text-align: start;
   padding: 0 5px 16px 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 5px 20px 0;
+  }
 }
 
 .card__buy {
@@ -44,6 +56,11 @@
 
   @media (min-width: $tablet-width) {
     margin: 0 auto 0 0;
+    padding: 1px 103px 0 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 1px 70px 0 0;
   }
 }
 

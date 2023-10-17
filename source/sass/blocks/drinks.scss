@@ -2,6 +2,10 @@
   @include reset;
   display: flex;
 
+  @media (min-width: $tablet-width) {
+    justify-content: center;
+  }
+
   @media (min-width: $desktop-width) {
     margin-left: 29px;
     max-width: 1030px;
