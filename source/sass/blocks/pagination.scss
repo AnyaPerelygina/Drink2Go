@@ -48,6 +48,11 @@
 
   @media (min-width: $desktop-width) {
     padding: 8px 20px;
+
+    &:first-child,
+    &:last-child {
+      width: 100%;
+    }
   }
 }
 

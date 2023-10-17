@@ -3458,6 +3458,9 @@ button,
   .pagination__item {
     padding: 8px 20px;
   }
+  .pagination__item:first-child, .pagination__item:last-child {
+    width: 100%;
+  }
 }
 
 .pagination__link {
