@@ -3,20 +3,18 @@ import {isMobile} from '../../utils/is-mobile';
 
 const createPromoSlider = () => {
   let swiper = new Swiper('.swiper', {
+    loop: false,
     speed: 1000,
     allowTouchMove: isMobile(),
     breakpoints: {
       320: {
         allowTouchMove: true,
-        loop: true,
       },
       768: {
         allowTouchMove: true,
-        loop: true,
       },
       1440: {
         allowTouchMove: false,
-        loop: false,
       },
     },
     pagination: {

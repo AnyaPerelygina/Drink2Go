@@ -71,4 +71,18 @@
   border: none;
   border-radius: 4px;
   background-color: $base-primary;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $primary-lighter;
+  }
+
+  &:active {
+    background-color: $primary-darker;
+  }
+
+  &:default {
+    background-color: $base-grey;
+  }
 }

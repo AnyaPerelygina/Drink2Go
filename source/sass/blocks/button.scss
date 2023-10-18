@@ -6,13 +6,57 @@
   margin-bottom: 37px;
 }
 
+.button-next {
+  &:focus,
+  &:hover {
+    background: linear-gradient(90deg,rgba(255,255,255,0)0,#fff 100%);
+  }
+
+  &:active {
+    background: linear-gradient(90deg,rgba(120,89,207,0)0,rgba(120,89,207,.25) 100%);
+  }
+
+  &:default {
+    color: $base-grey;
+  }
+}
+
+.button-previous {
+  &:focus,
+  &:hover {
+    background: linear-gradient(90deg,#fff 0,rgba(255,255,255,0) 100%);
+  }
+
+  &:active {
+    background: linear-gradient(90deg,rgba(120,89,207,.25)0,rgba(120,89,207,0) 100%);
+  }
+
+  &:default {
+    color: $base-grey;
+  }
+}
+
 .button__apply {
   @include global;
   padding: 8px;
   border: none;
   border-radius: 4px;
-  background-color: $primary-lighter;
+  background-color: $base-primary;
   color: $base-white;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $primary-lighter;
+  }
+
+  &:active {
+    background-color: $primary-darker;
+  }
+
+  &:default {
+    background-color: $base-grey;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 8px 20px;
@@ -30,6 +74,23 @@
   border-radius: 4px;
   background-color: $base-white;
   color: $primary-lighter;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $primary-lighter;
+    color: $base-white;
+  }
+
+  &:active {
+    background-color: $primary-darker;
+    color: $base-white;
+  }
+
+  &:default {
+    background-color: $base-grey;
+    color: $base-white;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 8px 20px;

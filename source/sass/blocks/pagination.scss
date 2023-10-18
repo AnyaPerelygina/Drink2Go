@@ -29,6 +29,19 @@
   justify-content: center;
   padding: 8px;
 
+  &:hover,
+  &:focus {
+    background-color: $primary-lighter;
+  }
+
+  &:active {
+    background-color: $primary-darker;
+  }
+
+  &:disabled {
+    background-color: $primary-grey;
+  }
+
   &:first-child,
   &:last-child {
     padding: 15px;
@@ -36,6 +49,14 @@
 
   &--current {
     background-color: transparent;
+    cursor: not-allowed;
+
+    &:hover,
+    &:focus,
+    &:active,
+    &:disabled {
+      background-color: transparent;
+    }
   }
 
   @media (min-width: $tablet-width) {
@@ -58,10 +79,25 @@
 
 .pagination__link {
   color: $base-primary;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &:disabled {
+    color: $base-white;
+  }
 }
 
 .pagination__current {
   color: $base-black;
+  cursor: not-allowed;
+
+  &:hover,
+  &:focus,
+  &:active,
+  &:disabled {
+    color: $base-black;
+  }
 }
 
 .pagination__link--back {

@@ -54,7 +54,7 @@
 
 .promo__button {
   position: absolute;
-  top: 44px;
+  top: 22px;
   bottom: 0;
   height: 100%;
   width: 20px;
@@ -69,7 +69,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    top: 43px;
+    top: 22px;
   }
 
   &::after {
