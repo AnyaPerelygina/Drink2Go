@@ -2234,16 +2234,16 @@ button,
   background-size: contain;
 }
 .advantages__item--speed::after {
-  background-image: url("/img/svg/speed.svg");
+  background-image: url("../../img/svg/speed.svg");
 }
 .advantages__item--pocket::after {
-  background-image: url("/img/svg/pocket.svg");
+  background-image: url("../../img/svg/pocket.svg");
 }
 .advantages__item--flash::after {
-  background-image: url("/img/svg/flash.svg");
+  background-image: url("../../img/svg/flash.svg");
 }
 .advantages__item--leaf::after {
-  background-image: url("/img/svg/leaf.svg");
+  background-image: url("../../img/svg/leaf.svg");
 }
 @media (max-width: 1439px) {
   .advantages__item::after {
