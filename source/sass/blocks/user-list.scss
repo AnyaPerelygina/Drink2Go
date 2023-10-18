@@ -19,6 +19,10 @@
 .user-list__item {
   padding: 18px 22px;
 
+  &:active {
+    background-color: $base-secondary;
+  }
+
   @media (min-width: $tablet-width) {
     padding: 30px 22px 26px;
   }
@@ -32,6 +36,12 @@
   @media (min-width: $desktop-width) {
     display: inline;
     position: relative;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $base-primary;
+    }
   }
 }
 

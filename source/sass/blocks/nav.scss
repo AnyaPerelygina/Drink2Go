@@ -23,6 +23,10 @@
   border: none;
   cursor: pointer;
 
+  &:active {
+    background-color: $base-secondary;
+  }
+
   @media (min-width: $tablet-width) {
     display: none;
   }
@@ -117,6 +121,12 @@
 }
 
 .nav__item {
+  background-color: $base-white;
+  
+  &:active {
+    background-color: $base-secondary;
+  }
+
   @media (max-width: $mobile-width-only) {
     padding: 16px 20px;
     border-bottom: 1px solid $base-secondary;
@@ -148,6 +158,15 @@
   letter-spacing: 2%;
   padding: 20px;
   text-transform: uppercase;
+
+  &:hover,
+  &:focus {
+    color: $base-primary;
+  }
+
+  &:active {
+    color: $base-primary;
+  }
 
   @media (min-width: $tablet-width) {
     padding: 0;

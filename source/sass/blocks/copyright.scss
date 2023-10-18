@@ -14,3 +14,25 @@
   @include small;
   color: $primary-grey;
 }
+
+.copyright__link {
+  &:hover,
+  &:focus {
+    color: $primary-lighter;
+  }
+
+  &:active {
+    color: $primary-darker;
+  }
+
+  svg {
+    &:hover,
+    &:focus {
+      color: $primary-lighter;
+    }
+  
+    &:active {
+      color: $primary-darker;
+    }
+  }
+}

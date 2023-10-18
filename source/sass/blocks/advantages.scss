@@ -97,19 +97,19 @@
   }
 
   &--speed::after {
-    background-image: url("../../img/svg/speed.svg");
+    background-image: url("../img/svg/speed.svg");
   }
 
   &--pocket::after {
-    background-image: url("../../img/svg/pocket.svg");
+    background-image: url("../img/svg/pocket.svg");
   }
 
   &--flash::after {
-    background-image: url("../../img/svg/flash.svg");
+    background-image: url("../img/svg/flash.svg");
   }
 
   &--leaf::after {
-    background-image: url("../../img/svg/leaf.svg");
+    background-image: url("../img/svg/leaf.svg");
   }
 
   @media (max-width: $tablet-width-only) {

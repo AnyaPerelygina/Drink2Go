@@ -17,4 +17,15 @@
   background-repeat: no-repeat;
   cursor: pointer;
   padding-left: 19px;
+
+  a {
+    &:hover,
+    &:focus {
+      color: $primary-lighter;
+    }
+
+    &:active {
+      color: $primary-darker;
+    }
+  }
 }

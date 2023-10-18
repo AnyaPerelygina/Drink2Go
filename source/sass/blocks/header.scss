@@ -29,6 +29,11 @@
     padding: 22px 40px;
   }
 
+  &:hover,
+  &:focus {
+    opacity: 0.5;
+  }
+
   img {
     @media (min-width: $tablet-width) {
       width: 82px;
