@@ -2403,7 +2403,7 @@ button,
   line-height: 20px;
   color: #FFFFFF;
   padding: 0 0px 0 26px;
-  background-image: url("../../img/sprite/basket-button.svg");
+  background-image: url("../img/sprite/basket-button.svg");
   background-size: 20px 16px;
   background-repeat: no-repeat;
   background-position: right 80px center;
@@ -2660,7 +2660,7 @@ button,
 }
 
 .contact__item--point-adress {
-  background-image: url("../../img/sprite/map-point.svg");
+  background-image: url("../img/sprite/map-point.svg");
   background-size: 13px 16px;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -2668,7 +2668,7 @@ button,
 }
 
 .contact__item--phone {
-  background-image: url("../../img/sprite/phone.svg");
+  background-image: url("../img/sprite/phone.svg");
   background-size: 13px 16px;
   background-repeat: no-repeat;
   cursor: pointer;
@@ -3519,7 +3519,7 @@ button,
 }
 
 .pagination__link--back {
-  background-image: url("../../img/sprite/pagination-left.svg");
+  background-image: url("../img/sprite/pagination-left.svg");
   background-size: 10px 10px;
   background-repeat: no-repeat;
   background-position: center;
@@ -3538,7 +3538,7 @@ button,
 }
 
 .pagination__link--forward {
-  background-image: url("../../img/sprite/pagination-right.svg");
+  background-image: url("../img/sprite/pagination-right.svg");
   background-size: 10px 10px;
   background-repeat: no-repeat;
   background-position: center;
