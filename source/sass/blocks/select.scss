@@ -49,6 +49,13 @@
   @media (min-width: $tablet-width) {
     text-align: right;
   }
+
+  option {
+    @include global;
+    font-family: inherit;
+    font-weight: 600;
+    color: $primary-lighter;
+  }
 }
 
 .select__icon {

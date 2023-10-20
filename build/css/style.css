@@ -2399,7 +2399,7 @@ button,
 .button__apply:active {
   background-color: #593CAC;
 }
-.button__apply:default {
+.button__apply:disabled {
   background-color: #BDBDBD;
 }
 @media (min-width: 768px) {
@@ -4212,6 +4212,15 @@ button,
   .select__control {
     text-align: right;
   }
+}
+.select__control option {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: inherit;
+  font-weight: 600;
+  color: #9070EC;
 }
 
 .select__icon {
