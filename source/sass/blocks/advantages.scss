@@ -112,7 +112,7 @@
     background-image: url("../img/svg/leaf.svg");
   }
 
-  @media (max-width: $tablet-width-only) {
+  @media (min-width: 768px) and (max-width: 1439px) {
     &::after {
       left: 7%;
       transform: translateX(-50%);

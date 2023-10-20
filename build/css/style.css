@@ -2245,7 +2245,7 @@ button,
 .advantages__item--leaf::after {
   background-image: url("../img/svg/leaf.svg");
 }
-@media (max-width: 1439px) {
+@media (min-width: 768px) and (max-width: 1439px) {
   .advantages__item::after {
     left: 7%;
     -webkit-transform: translateX(-50%);
