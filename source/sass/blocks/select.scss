@@ -6,10 +6,12 @@
   justify-content: center;
   gap: 12px;
   margin: 0 0 15px 7px;
+  width: 266px;
 
   @media (min-width: $tablet-width) {
     justify-content: flex-end;
     margin: 0 0 26px 7px;
+    width: unset;
   }
 
   @media (min-width: $desktop-width) {
@@ -41,13 +43,19 @@
   border-radius: 4px;
   appearance: none;
   background-color: transparent;
-  background-image: url("../img/sprite/sorting.svg");
-  background-size: 12px 10px;
-  background-repeat: no-repeat;
-  background-position: right 10px center;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
     text-align: right;
+  }
+}
+
+.select__icon {
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    right: 10px;
   }
 }
