@@ -2229,7 +2229,10 @@ button,
   width: 52px;
   height: 56px;
   top: 3px;
-  left: 115px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   background-repeat: no-repeat;
   background-size: contain;
 }

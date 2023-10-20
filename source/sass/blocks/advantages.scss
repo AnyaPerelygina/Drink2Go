@@ -91,7 +91,9 @@
     width: 52px;
     height: 56px;
     top: 3px;
-    left: 115px;
+    // left: 115px;
+    left: 50%;
+    transform: translateX(-50%);
     background-repeat: no-repeat;
     background-size: contain;
   }
