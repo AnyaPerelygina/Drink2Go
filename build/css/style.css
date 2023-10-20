@@ -2247,7 +2247,7 @@ button,
 }
 @media (max-width: 1439px) {
   .advantages__item::after {
-    left: 50%;
+    left: 7%;
     -webkit-transform: translateX(-50%);
         -ms-transform: translateX(-50%);
             transform: translateX(-50%);
