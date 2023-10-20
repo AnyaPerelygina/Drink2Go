@@ -1,4 +1,6 @@
 .control__milk {
+  cursor: pointer;
+
   &::before {
     content: "";
     position: absolute;
@@ -52,6 +54,21 @@
   background-color: $primary-lighter;
 }
 
+.control__input:checked + .control__mark {
+  &:hover,
+  &:focus {
+    &::after {
+      background-color: $primary-opacity;
+    }
+  }
+
+  &:disabled {
+    &::after {
+      background-color: $primary-grey;
+    }
+  }
+}
+
 .control__input:disabled + .control__mark::before {
   content: "";
   position: absolute;
@@ -70,9 +87,20 @@
   left: -31px;
   width: 42px;
   height: 24px;
-  background: $base-grey;
+  background-color: $base-grey;
   border-radius: 12px;
   border: none;
+
+  &:hover,
+  &:focus {
+    background-color: $primary-opacity;
+    border: 2px solid $primary-lighter;
+
+    &::before {
+      left: 0;
+      top: 0;
+    }
+  }
 }
 
 .control__customMark::before {

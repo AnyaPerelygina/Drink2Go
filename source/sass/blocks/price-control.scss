@@ -29,6 +29,16 @@
   border-radius: 4px;
   text-align: center;
 
+  &:focus,
+  &:focus-visible {
+    border: 2px solid $primary-darker;
+    outline: none;
+  }
+
+  &:disabled {
+    background-color: $primary-grey;
+  }
+
   @media (min-width: $tablet-width) {
     width: 87px;
   }
@@ -40,6 +50,15 @@
 
 .price-control__input--from {
   color: $primary-grey;
+
+  &:focus,
+  &:focus-visible {
+    color: $base-black;
+  }
+
+  &:disabled {
+    color: $primary-grey;
+  }
 }
 
 .price-conrol__line {
@@ -49,4 +68,13 @@
 
 .price-control__input--to {
   color: $base-black;
+
+  &:focus,
+  &:focus-visible {
+    color: $base-black;
+  }
+
+  &:disabled {
+    color: $primary-grey;
+  }
 }

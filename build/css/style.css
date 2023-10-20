@@ -2741,6 +2741,9 @@ button,
   color: #593CAC;
 }
 
+.control__milk {
+  cursor: pointer;
+}
 .control__milk::before {
   content: "";
   position: absolute;
@@ -2792,6 +2795,13 @@ button,
   background-color: #9070EC;
 }
 
+.control__input:checked + .control__mark:hover::after, .control__input:checked + .control__mark:focus::after {
+  background-color: rgba(120, 89, 207, 0.2509803922);
+}
+.control__input:checked + .control__mark:disabled::after {
+  background-color: #E2E2E2;
+}
+
 .control__input:disabled + .control__mark::before {
   content: "";
   position: absolute;
@@ -2810,9 +2820,17 @@ button,
   left: -31px;
   width: 42px;
   height: 24px;
-  background: #BDBDBD;
+  background-color: #BDBDBD;
   border-radius: 12px;
   border: none;
+}
+.control__customMark:hover, .control__customMark:focus {
+  background-color: rgba(120, 89, 207, 0.2509803922);
+  border: 2px solid #9070EC;
+}
+.control__customMark:hover::before, .control__customMark:focus::before {
+  left: 0;
+  top: 0;
 }
 
 .control__customMark::before {
@@ -3660,6 +3678,13 @@ button,
   border-radius: 4px;
   text-align: center;
 }
+.price-control__input:focus, .price-control__input:focus-visible {
+  border: 2px solid #593CAC;
+  outline: none;
+}
+.price-control__input:disabled {
+  background-color: #E2E2E2;
+}
 @media (min-width: 768px) {
   .price-control__input {
     width: 87px;
@@ -3674,6 +3699,12 @@ button,
 .price-control__input--from {
   color: #E2E2E2;
 }
+.price-control__input--from:focus, .price-control__input--from:focus-visible {
+  color: #333333;
+}
+.price-control__input--from:disabled {
+  color: #E2E2E2;
+}
 
 .price-conrol__line {
   color: #E2E2E2;
@@ -3682,6 +3713,12 @@ button,
 
 .price-control__input--to {
   color: #333333;
+}
+.price-control__input--to:focus, .price-control__input--to:focus-visible {
+  color: #333333;
+}
+.price-control__input--to:disabled {
+  color: #E2E2E2;
 }
 
 .promo-card {
