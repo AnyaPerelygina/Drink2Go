@@ -103,6 +103,11 @@
     background-color: $base-white;
     opacity: 1;
 
+    &:hover,
+    &:focus {
+      background-color: $primary-opacity;
+    }
+
     &-active {
       background-color: $base-primary;
     }
@@ -115,6 +120,7 @@
     bottom: 63px;
   }
 }
+
 
 .promo__pagination {
   @media (min-width: 320px) and (max-width: 1439px) {

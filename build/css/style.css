@@ -4022,6 +4022,9 @@ button,
     background-color: #FFFFFF;
     opacity: 1;
   }
+  .swiper-pagination-horizontal .swiper-pagination-bullet:hover, .swiper-pagination-horizontal .swiper-pagination-bullet:focus {
+    background-color: rgba(120, 89, 207, 0.2509803922);
+  }
   .swiper-pagination-horizontal .swiper-pagination-bullet-active {
     background-color: #7859CF;
   }
