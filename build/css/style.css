@@ -4182,11 +4182,6 @@ button,
   font-weight: 600;
   color: #333333;
 }
-@media (min-width: 768px) {
-  .select__title {
-    margin-right: -56px;
-  }
-}
 
 .select__control {
   font-family: "Montserrat", sans-serif;
@@ -4196,7 +4191,7 @@ button,
   font-family: inherit;
   font-weight: 600;
   color: #9070EC;
-  min-width: 165px;
+  width: 165px;
   margin: 0;
   padding: 4px 30px 4px 10px;
   border: none;
@@ -4206,6 +4201,9 @@ button,
           appearance: none;
   background-color: transparent;
   cursor: pointer;
+}
+.select__control:hover, .select__control:focus {
+  background-color: #F0EBFF;
 }
 @media (min-width: 768px) {
   .select__control {
