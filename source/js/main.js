@@ -18,6 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
 
+  navToggle();
   createPromoSlider();
   initLeaflet();
   newMaxPrice();

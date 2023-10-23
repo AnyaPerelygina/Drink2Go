@@ -5,7 +5,7 @@
   justify-content: flex-start;
 
   @media (min-width: $tablet-width) {
-    display: grid; 
+    display: grid;
     grid-template-columns: repeat(3, auto);
     margin-bottom: -9px;
   }
@@ -39,7 +39,7 @@
 .footer-nav__list__item {
   padding: 8px 0;
   text-transform: uppercase;
-  font-family: "Montserrat",sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 12px;
   line-height: 16px;

@@ -9,11 +9,11 @@
 .button-next {
   &:focus,
   &:hover {
-    background: linear-gradient(90deg,rgba(255,255,255,0)0,#fff 100%);
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0), #ffffff 100%);
   }
 
   &:active {
-    background: linear-gradient(90deg,rgba(120,89,207,0)0,rgba(120,89,207,.25) 100%);
+    background: linear-gradient(90deg, rgba(120, 89, 207, 0), rgba(120, 89, 207, 0.25) 100%);
   }
 
   &:default {
@@ -24,11 +24,11 @@
 .button-previous {
   &:focus,
   &:hover {
-    background: linear-gradient(90deg,#fff 0,rgba(255,255,255,0) 100%);
+    background: linear-gradient(90deg, #ffffff, rgba(255, 255, 255, 0) 100%);
   }
 
   &:active {
-    background: linear-gradient(90deg,rgba(120,89,207,.25)0,rgba(120,89,207,0) 100%);
+    background: linear-gradient(90deg, rgba(120, 89, 207, 0.25), rgba(120, 89, 207, 0) 100%);
   }
 
   &:default {
@@ -104,7 +104,7 @@
 .button__basket {
   @include middle;
   color: $base-white;
-  padding: 0 0px 0 26px;
+  padding: 0 0 0 26px;
   background-image: url("../img/sprite/basket-button.svg");
   background-size: 20px 16px;
   background-repeat: no-repeat;

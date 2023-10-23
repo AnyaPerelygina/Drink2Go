@@ -52,11 +52,11 @@
 
   @media (min-width: $desktop-width) {
     display: grid;
-    grid-template-areas: 
-    "A B B"
-    "A C C"
-    "A C C"
-    "D D D";
+    grid-template-areas:
+      "A B B"
+      "A C C"
+      "A C C"
+      "D D D";
   }
 }
 
