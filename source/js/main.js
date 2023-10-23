@@ -3,6 +3,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {navToggle} from './modules/nav/toggle';
 import {createPromoSlider} from './modules/promo/promo-slider';
+import {newMaxPrice} from './modules/catalog/price-control';
 import {initLeaflet} from './modules/leaflet/leaflet';
 
 // ---------------------------------
@@ -17,9 +18,9 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
 
-  // navToggle();
   createPromoSlider();
   initLeaflet();
+  newMaxPrice();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
