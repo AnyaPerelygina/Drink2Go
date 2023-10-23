@@ -2741,10 +2741,10 @@ button,
   color: #593CAC;
 }
 
-.control__milk {
+.control-milk {
   cursor: pointer;
 }
-.control__milk::before {
+.control-milk::before {
   content: "";
   position: absolute;
   left: -13px;
@@ -3629,7 +3629,7 @@ button,
 }
 
 @media (max-width: 767px) {
-  .pagination__link--text {
+  .pagination__link-text {
     color: transparent;
     display: none;
   }
