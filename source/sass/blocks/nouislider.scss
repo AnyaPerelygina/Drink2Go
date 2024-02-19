@@ -1,0 +1,59 @@
+.noUi-horizontal .noUi-handle {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #9070ec;
+    box-shadow: unset;
+  }
+  
+  [disabled] .noUi-handle {
+    border-color: #bdbdbd;
+  }
+  
+  .noUi-handle {
+    &::after,
+    &::before {
+      display: none;
+    }
+  
+    &:hover .noUi-touch-area,
+    &:focus .noUi-touch-area {
+      background: #7859cf40;
+      border-radius: 50%;
+      border: 2px solid #ffffff;
+    }
+  
+    &:active .noUi-touch-area {
+      background: #7859cf;
+      border-radius: 50%;
+      border: 2px solid #ffffff;
+    }
+  }
+  
+  .noUi-connects {
+    position: relative;
+  }
+  
+  .noUi-connect {
+    position: absolute;
+    top: 4px;
+    height: 4px;
+    background-color: #9070ec;
+  }
+  
+  .noUi-target {
+    position: relative;
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+  
+    &::after {
+      position: absolute;
+      top: 4px;
+      width: calc(100% + 17px);
+      height: 2px;
+      background-color: #e2e2e2;
+      transform: translateY(50%);
+      content: "";
+    }
+  }

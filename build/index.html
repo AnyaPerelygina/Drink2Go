@@ -336,19 +336,28 @@
             </div>
           </form>
 
-          <div class="select">
-            <span class="select__title">Сортировка:</span>
-            <select class="select__control" aria-label="Сортировка">
-              <option value="cheap">по умолчанию</option>
-              <option value="cheap">Сначала дешевые</option>
-              <option value="expensive">Сначала дорогое</option>
-              <option value="popular">Сначала популярное</option>
-            </select>
-            <svg class="select__icon" aria-hidden="true" focusable="false" width="10" height="6">
-              <use href="img/sprite.svg#sorting"></use>
-            </svg>
+          <div class="catalog-sorting">
+            <span class="catalog-sorting__title">Сортировка:</span>
+            <form action="#">
+              <div class="custom-select custom-select--primary" data-select data-name="sorting__options" data-id="sorting__options">
+                <button class="custom-select__button custom-select__button--primary" type="button" aria-label="Выберите одну из опций сортировки">
+                  <span class="custom-select__text">По умолчанию</span>
+                  <span class="custom-select__icon">
+                    <svg aria-hidden="true" focusable="false" width="10" height="6">
+                      <use href="img/sprite.svg#sorting"></use>
+                    </svg>
+                  </span>
+                </button>
+                <ul class="custom-select__list custom-select__list--primary" role="listbox">
+                  <li class="custom-select__item custom-select__item--active" tabindex="0" data-select-value="id-1" aria-selected="false" role="option">По умолчанию</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="id-2" aria-selected="false" role="option">Сначала дешевые</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="id-3" aria-selected="false" role="option">Сначала дорогое</li>
+                  <li class="custom-select__item" tabindex="0" data-select-value="id-4" aria-selected="false" role="option">Сначала популярное</li>
+                </ul>
+              </div>
+            </form>
           </div>
-
+          
           <div class="drinks">
             <h3 class="visually-hidden">Каталог кофейных напитков</h3>
             <ul class="drinks-list">
@@ -587,7 +596,7 @@
         </a>
       </div>
     </footer>
-    
+
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>

@@ -1,11 +1,10 @@
 import {iosVhFix} from './utils/ios-vh-fix';
+import {CustomSelect} from './vendor/select/custom-select';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import {navToggle} from './modules/nav/toggle';
+// import {navToggle} from './modules/nav/toggle';
 import {createPromoSlider} from './modules/promo/promo-slider';
-// import {newMaxPrice} from './modules/catalog/price-control';
 import {initLeaflet} from './modules/leaflet/leaflet';
-
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -18,15 +17,15 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
 
-  // navToggle();
   createPromoSlider();
   initLeaflet();
-  // newMaxPrice();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initModals();
+    const select = new CustomSelect();
+    select.init();
     const form = new Form();
     window.form = form;
     form.init();

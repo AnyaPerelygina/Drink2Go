@@ -1,0 +1,117 @@
+.custom-select {
+  display: flex;
+  flex-direction: row;
+  gap: 7px;
+  align-items: start;
+  justify-content: start;
+  position: relative;
+
+  select {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+  }
+
+  &.is-open {
+    .custom-select__list {
+      display: flex;
+    }
+
+    .custom-select__button .custom-select__icon {
+      background-color: transparent;
+      
+      svg {
+        transform: rotate(180deg);
+        margin: 0 0 3px;
+      }
+    }
+  }
+}
+
+.custom-select__button {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  gap: 7px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  color: $base-primary;
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  padding: 4px 10px;
+  cursor: pointer;
+  user-select: none;
+
+  &:hover,
+  &:focus-visible {
+    outline: none;
+    background-color: $base-secondary;
+  }
+
+  &:active {
+    background-color: transparent;
+  }
+}
+
+.custom-select__text {
+  text-align: start;
+  text-transform: lowercase;
+}
+
+.custom-select__icon svg {
+  margin-bottom: 2px;
+}
+
+.custom-select__list {
+  width: 100%;
+  min-width: 240px;
+  margin: 0;
+  list-style: none;
+  flex-direction: column;
+  row-gap: 4px;
+  padding: 23px;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  z-index: 1;
+  background-color: $base-white;
+  border: 1px solid $primary-lighter;
+  border-radius: 14px;
+  display: none;
+}
+
+.custom-select__item {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 120%;
+  text-align: start;
+  cursor: pointer;
+  user-select: none;
+  text-transform: lowercase;
+  width: fit-content;
+  padding: 6px;
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    outline: none;
+    color: $base-primary;
+  }
+
+  &--active {
+    font-weight: 600;
+    color: $base-primary;
+  }
+}

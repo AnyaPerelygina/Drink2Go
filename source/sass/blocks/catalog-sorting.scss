@@ -1,0 +1,27 @@
+.catalog-sorting {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+  gap: 4px;
+  margin: 0 0 15px 7px;
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    justify-content: flex-end;
+    margin: 0 0 26px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-area: B;
+    grid-column: span 2;
+    margin: 36px 1px 28px auto;
+  }
+}
+
+.catalog-sorting__title {
+  @include global;
+  font-weight: 600;
+  color: $base-black;
+}
