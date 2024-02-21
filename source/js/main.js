@@ -4,6 +4,7 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {toggleNav} from './modules/nav/toggle';
 import {createPromoSlider} from './modules/promo/promo-slider';
+import {initRangeSliders} from './modules/filters/filters';
 import {initLeaflet} from './modules/leaflet/leaflet';
 // ---------------------------------
 
@@ -19,6 +20,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   toggleNav();
   createPromoSlider();
+  initRangeSliders();
   initLeaflet();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

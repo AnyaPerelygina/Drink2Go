@@ -180,37 +180,15 @@
 
         <div class="catalog__wrapper">
           <h3 class="visually-hidden">Фильтры для поиска</h3>
-          <form class="catalog__form" action="https://echo.htmlacademy.ru/" method="get">
-            <fieldset class="catalog__form filter-constructor price-control">
+          <form class="catalog__form" action="https://echo.htmlacademy.ru/" method="get" novalidate>
+
+            <fieldset class="catalog__form filter-constructor">
               <legend class="filter-constructor__title">Цена</legend>
-
-              <div class="range">
-                <div class="range__scale">
-                  <div class="range__bar">
-                    <button type="button" class="range__toggle range__toggle--min"></button>
-                    <button type="button" class="range__toggle range__toggle--max"></button>
-                  </div>
-                </div>
-              </div>
-
-              <div class="price-conrol">
-                <label class="price-control__label">
-                  <input
-                    class="price-control__input price-control__input--from"
-                    type="text"
-                    placeholder="0"
-                    name="price-filter"
-                    value="0">
-                </label>
-                <b class="price-conrol__line">_</b>
-                <label class="price-control__label">
-                  <input
-                    class="price-control__input price-control__input--to"
-                    type="text"
-                    placeholder="900"
-                    name="price-filter"
-                    value="900">
-                </label>
+              <div class="range-slider" data-range-slider="price" aria-label="Choose a value"></div>
+              <div class="price-control">
+                <input class="price-control__from" type="text" id="minCost" value="0">
+                <span class="price-control__line"></span>
+                <input class="price-control__to" type="text" id="maxCost" value="900">
               </div>
             </fieldset>
 

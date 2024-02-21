@@ -1,19 +1,9 @@
-.range {
-  margin-top: 29px;
-
-  @media (min-width: $tablet-width) {
-    margin-left: -3px;
-    margin-bottom: -4px;
-  }
-}
-
-.range__scale {
-  position: relative;
+.range-slider {
   height: 0;
   margin-bottom: 33px;
   border-radius: 2px;
   width: 280px;
-  border: 2px solid $primary-grey;
+  margin-top: 29px;
   margin-left: 4px;
   box-sizing: border-box;
 
@@ -24,43 +14,42 @@
   @media (min-width: $desktop-width) {
     width: 317px;
   }
-}
 
-.range__bar {
-  position: absolute;
-  height: 4px;
-  width: 241px;
-  background-color: $primary-lighter;
-  margin-top: -2px;
-
-  @media (min-width: $tablet-width) {
-    width: 181px;
+  .noUi-base {
+    height: 4px;
+    border-radius: 4px;
+    background-color: $primary-grey;
   }
 
-  @media (min-width: $desktop-width) {
-    width: 276px;
+  .noUi-connects {
+    border-radius: 50px;
   }
-}
 
-.range__toggle {
-  position: absolute;
-  width: 24px;
-  height: 24px;
-  background-color: $base-white;
-  border: 2px solid $primary-lighter;
-  border-radius: 50px;
-  cursor: pointer;
-  margin-top: -10px;
-}
+  .noUi-connect {
+    height: 4px;
+    background-color: $primary-lighter;
+  }
 
-.range__toggle--min {
-  left: -3px;
-}
+  .noUi-handle {
+    width: 24px;
+    height: 24px;
+    background-color: $base-white;
+    border: 2px solid $primary-lighter;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: -5px;
 
-.range__toggle--max {
-  right: -16px;
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
 
-  @media (min-width: $tablet-width) {
-    right: -19px;
+  .noUi-tooltip {
+    display: none;
+  }
+
+  .noUi-handle {
+    cursor: pointer;
   }
 }

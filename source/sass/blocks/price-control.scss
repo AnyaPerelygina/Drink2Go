@@ -1,4 +1,4 @@
-.price-conrol {
+.price-control {
   width: 280px;
   display: flex;
   flex-direction: row;
@@ -19,7 +19,8 @@
   }
 }
 
-.price-control__input {
+.price-control__from,
+.price-control__to {
   @include global;
   font-weight: 500;
   font-family: inherit;
@@ -48,7 +49,7 @@
   }
 }
 
-.price-control__input--from {
+.price-control__from {
   color: $primary-grey;
 
   &:focus,
@@ -61,12 +62,14 @@
   }
 }
 
-.price-conrol__line {
-  color: $primary-grey;
-  padding-top: 3px;
+.price-control__line {
+  align-self: center;
+  height: 2px;
+  width: 8px;
+  background-color: $base-grey;
 }
 
-.price-control__input--to {
+.price-control__to {
   color: $base-black;
 
   &:focus,
