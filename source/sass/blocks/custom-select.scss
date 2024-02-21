@@ -75,19 +75,19 @@
 
 .custom-select__list {
   width: 100%;
-  min-width: 240px;
+  min-width: 225px;
   margin: 0;
   list-style: none;
   flex-direction: column;
   row-gap: 4px;
-  padding: 23px;
+  padding: 15px;
   position: absolute;
   top: 40px;
   right: 0;
   z-index: 1;
   background-color: $base-white;
   border: 1px solid $primary-lighter;
-  border-radius: 14px;
+  border-radius: 15px;
   display: none;
 }
 
@@ -111,7 +111,6 @@
   }
 
   &--active {
-    font-weight: 600;
     color: $base-primary;
   }
 }

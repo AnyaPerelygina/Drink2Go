@@ -1939,6 +1939,12 @@ svg.leaflet-image-layer.leaflet-interactive path {
 }
 
 /* GLOBAL */
+.intro {
+  text-align: start;
+  padding: 20px;
+  color: #333333;
+}
+
 @font-face {
   font-family: "Montserrat";
   font-style: normal;
@@ -2970,7 +2976,7 @@ button,
 
 .custom-select__list {
   width: 100%;
-  min-width: 240px;
+  min-width: 225px;
   margin: 0;
   list-style: none;
   -webkit-box-orient: vertical;
@@ -2978,14 +2984,14 @@ button,
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 4px;
-  padding: 23px;
+  padding: 15px;
   position: absolute;
   top: 40px;
   right: 0;
   z-index: 1;
   background-color: #ffffff;
   border: 1px solid #9070ec;
-  border-radius: 14px;
+  border-radius: 15px;
   display: none;
 }
 
@@ -3011,7 +3017,6 @@ button,
   color: #7859cf;
 }
 .custom-select__item--active {
-  font-weight: 600;
   color: #7859cf;
 }
 

@@ -2,7 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {CustomSelect} from './vendor/select/custom-select';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-// import {navToggle} from './modules/nav/toggle';
+import {toggleNav} from './modules/nav/toggle';
 import {createPromoSlider} from './modules/promo/promo-slider';
 import {initLeaflet} from './modules/leaflet/leaflet';
 // ---------------------------------
@@ -17,6 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
 
+  toggleNav();
   createPromoSlider();
   initLeaflet();
 
