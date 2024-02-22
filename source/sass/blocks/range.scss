@@ -1,32 +1,45 @@
 .range-slider {
+  display: flex;
+  justify-content: end;
   height: 0;
   margin-bottom: 33px;
   border-radius: 2px;
-  width: 280px;
+  width: 100%;
+  max-width: 273px;
   margin-top: 29px;
   margin-left: 4px;
   box-sizing: border-box;
 
   @media (min-width: $tablet-width) {
-    width: 223px;
+    max-width: 216px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 317px;
+    max-width: 312px;
   }
 
   .noUi-base {
-    height: 4px;
-    border-radius: 4px;
+    max-width: 255px;
+    height: 2px;
     background-color: $primary-grey;
+    border-radius: 0;
+
+    @media (min-width: $tablet-width) {
+      max-width: 200px;
+    }
+  
+    @media (min-width: $desktop-width) {
+      max-width: 300px;
+    }
   }
 
   .noUi-connects {
     border-radius: 50px;
+    height: 4px;
+    top: -1px;
   }
 
   .noUi-connect {
-    height: 4px;
     background-color: $primary-lighter;
   }
 
@@ -47,9 +60,5 @@
 
   .noUi-tooltip {
     display: none;
-  }
-
-  .noUi-handle {
-    cursor: pointer;
   }
 }
