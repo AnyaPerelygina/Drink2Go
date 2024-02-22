@@ -1,14 +1,15 @@
 .range-slider {
   display: flex;
-  justify-content: end;
-  height: 0;
+  justify-content: start;
   margin-bottom: 33px;
-  border-radius: 2px;
   width: 100%;
   max-width: 273px;
   margin-top: 29px;
   margin-left: 4px;
   box-sizing: border-box;
+  height: 2px;
+  background-color: $primary-grey;
+  border-radius: 0;
 
   @media (min-width: $tablet-width) {
     max-width: 216px;
@@ -19,17 +20,16 @@
   }
 
   .noUi-base {
-    max-width: 255px;
-    height: 2px;
-    background-color: $primary-grey;
-    border-radius: 0;
+    width: 253px;
+    height: auto;
+    background-color: transparent;
 
     @media (min-width: $tablet-width) {
-      max-width: 200px;
+      width: 200px;
     }
   
     @media (min-width: $desktop-width) {
-      max-width: 300px;
+      width: 300px;
     }
   }
 
@@ -51,10 +51,24 @@
     border-radius: 50px;
     cursor: pointer;
     margin-top: -5px;
+  }
 
-    &::before,
-    &::after {
-      display: none;
+  .noUi-touch-area {
+    &:hover,
+    &:focus {
+      background-color: $bg-lavender-latte;
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+      margin: 2px;
+    }
+
+    &:active {
+      background-color: $base-primary;
+      height: 16px;
+      width: 16px;
+      border-radius: 50%;
+      margin: 2px;
     }
   }
 

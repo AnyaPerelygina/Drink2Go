@@ -932,8 +932,6 @@ button.swiper-pagination-bullet {
   z-index: 0;
 }
 
-/* Wrapper for all connect elements.
- */
 .noUi-connect, .noUi-origin {
   will-change: transform;
   position: absolute;
@@ -950,16 +948,11 @@ button.swiper-pagination-bullet {
           transform-style: flat;
 }
 
-/* Offset direction
- */
 .noUi-txt-dir-rtl.noUi-horizontal .noUi-origin {
   left: 0;
   right: auto;
 }
 
-/* Give origins 0 height/width so they don't interfere with clicking the
- * connect elements.
- */
 .noUi-vertical .noUi-origin {
   top: -100%;
   width: 0;
@@ -992,15 +985,13 @@ button.swiper-pagination-bullet {
   cursor: inherit !important;
 }
 
-/* Slider size and handle placement;
- */
 .noUi-horizontal {
   height: 18px;
 }
 .noUi-horizontal .noUi-handle {
   width: 34px;
   height: 28px;
-  right: -2px;
+  right: -20px;
   top: -6px;
 }
 
@@ -1015,204 +1006,20 @@ button.swiper-pagination-bullet {
 }
 
 .noUi-txt-dir-rtl.noUi-horizontal .noUi-handle {
-  left: -17px;
+  left: 0;
   right: auto;
 }
 
-/* Styling;
- * Giving the connect element a border radius causes issues with using transform: scale
- */
 .noUi-connects {
   border-radius: 3px;
 }
 
-/* Handles and cursors;
- */
 .noUi-draggable {
   cursor: ew-resize;
 }
 
 .noUi-vertical .noUi-draggable {
   cursor: ns-resize;
-}
-
-/* Handle stripes;
- */
-.noUi-vertical .noUi-handle:before {
-  width: 14px;
-  height: 1px;
-  left: 6px;
-  top: 14px;
-}
-.noUi-vertical .noUi-handle:after {
-  width: 14px;
-  height: 1px;
-  left: 6px;
-  top: 14px;
-  top: 17px;
-}
-
-/* Disabled state;
- */
-[disabled] .noUi-connect {
-  background: #B8B8B8;
-}
-[disabled].noUi-target, [disabled].noUi-handle, [disabled] .noUi-handle {
-  cursor: not-allowed;
-}
-
-/* Base;
- *
- */
-.noUi-pips {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  position: absolute;
-  color: #999;
-}
-.noUi-pips * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-/* Values;
- *
- */
-.noUi-value {
-  position: absolute;
-  white-space: nowrap;
-  text-align: center;
-}
-
-.noUi-value-sub {
-  color: #ccc;
-  font-size: 10px;
-}
-
-/* Markings;
- *
- */
-.noUi-marker {
-  position: absolute;
-  background: #CCC;
-}
-
-.noUi-marker-sub, .noUi-marker-large {
-  background: #AAA;
-}
-
-/* Horizontal layout;
- *
- */
-.noUi-pips-horizontal {
-  padding: 10px 0;
-  height: 80px;
-  top: 100%;
-  left: 0;
-  width: 100%;
-}
-
-.noUi-value-horizontal {
-  -webkit-transform: translate(-50%, 50%);
-  -ms-transform: translate(-50%, 50%);
-      transform: translate(-50%, 50%);
-}
-
-.noUi-rtl .noUi-value-horizontal {
-  -webkit-transform: translate(50%, 50%);
-  -ms-transform: translate(50%, 50%);
-      transform: translate(50%, 50%);
-}
-
-.noUi-marker-horizontal.noUi-marker {
-  margin-left: -1px;
-  width: 2px;
-  height: 5px;
-}
-.noUi-marker-horizontal.noUi-marker-sub {
-  height: 10px;
-}
-.noUi-marker-horizontal.noUi-marker-large {
-  height: 15px;
-}
-
-/* Vertical layout;
- *
- */
-.noUi-pips-vertical {
-  padding: 0 10px;
-  height: 100%;
-  top: 0;
-  left: 100%;
-}
-
-.noUi-value-vertical {
-  -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-      transform: translate(0, -50%);
-  padding-left: 25px;
-}
-
-.noUi-rtl .noUi-value-vertical {
-  -webkit-transform: translate(0, 50%);
-  -ms-transform: translate(0, 50%);
-      transform: translate(0, 50%);
-}
-
-.noUi-marker-vertical.noUi-marker {
-  width: 5px;
-  height: 2px;
-  margin-top: -1px;
-}
-.noUi-marker-vertical.noUi-marker-sub {
-  width: 10px;
-}
-.noUi-marker-vertical.noUi-marker-large {
-  width: 15px;
-}
-
-.noUi-tooltip {
-  display: block;
-  position: absolute;
-  border: 1px solid #D9D9D9;
-  border-radius: 3px;
-  background: #fff;
-  color: #000;
-  padding: 5px;
-  text-align: center;
-  white-space: nowrap;
-}
-
-.noUi-horizontal .noUi-tooltip {
-  -webkit-transform: translate(-50%, 0);
-  -ms-transform: translate(-50%, 0);
-      transform: translate(-50%, 0);
-  left: 50%;
-  bottom: 120%;
-}
-
-.noUi-vertical .noUi-tooltip {
-  -webkit-transform: translate(0, -50%);
-  -ms-transform: translate(0, -50%);
-      transform: translate(0, -50%);
-  top: 50%;
-  right: 120%;
-}
-
-.noUi-horizontal .noUi-origin > .noUi-tooltip {
-  -webkit-transform: translate(50%, 0);
-  -ms-transform: translate(50%, 0);
-      transform: translate(50%, 0);
-  left: auto;
-  bottom: 10px;
-}
-
-.noUi-vertical .noUi-origin > .noUi-tooltip {
-  -webkit-transform: translate(0, -18px);
-  -ms-transform: translate(0, -18px);
-      transform: translate(0, -18px);
-  top: auto;
-  right: 28px;
 }
 
 /* stylelint-disable */
@@ -4137,9 +3944,7 @@ button,
     margin-bottom: 0;
   }
 }
-
-.price-control__from,
-.price-control__to {
+.price-control input {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-size: 16px;
@@ -4151,38 +3956,26 @@ button,
   border: 2px solid #9070ec;
   border-radius: 4px;
   text-align: center;
+  color: #333333;
 }
-.price-control__from:focus, .price-control__from:focus-visible,
-.price-control__to:focus,
-.price-control__to:focus-visible {
+.price-control input:focus, .price-control input:focus-visible {
   border: 2px solid #593cac;
   outline: none;
 }
-.price-control__from:disabled,
-.price-control__to:disabled {
-  background-color: #e2e2e2;
+.price-control input:disabled {
+  background-color: transparent;
+  border-color: #e2e2e2;
+  color: #e2e2e2;
 }
 @media (min-width: 768px) {
-  .price-control__from,
-.price-control__to {
+  .price-control input {
     width: 87px;
   }
 }
 @media (min-width: 1440px) {
-  .price-control__from,
-.price-control__to {
+  .price-control input {
     width: 134px;
   }
-}
-
-.price-control__from {
-  color: #e2e2e2;
-}
-.price-control__from:focus, .price-control__from:focus-visible {
-  color: #333333;
-}
-.price-control__from:disabled {
-  color: #e2e2e2;
 }
 
 .price-control__line {
@@ -4192,16 +3985,6 @@ button,
   height: 2px;
   width: 8px;
   background-color: #bdbdbd;
-}
-
-.price-control__to {
-  color: #333333;
-}
-.price-control__to:focus, .price-control__to:focus-visible {
-  color: #333333;
-}
-.price-control__to:disabled {
-  color: #e2e2e2;
 }
 
 .promo-card {
@@ -4567,18 +4350,19 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: end;
-  height: 0;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
   margin-bottom: 33px;
-  border-radius: 2px;
   width: 100%;
   max-width: 273px;
   margin-top: 29px;
   margin-left: 4px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  height: 2px;
+  background-color: #e2e2e2;
+  border-radius: 0;
 }
 @media (min-width: 768px) {
   .range-slider {
@@ -4591,19 +4375,18 @@ button,
   }
 }
 .range-slider .noUi-base {
-  max-width: 255px;
-  height: 2px;
-  background-color: #e2e2e2;
-  border-radius: 0;
+  width: 253px;
+  height: auto;
+  background-color: transparent;
 }
 @media (min-width: 768px) {
   .range-slider .noUi-base {
-    max-width: 200px;
+    width: 200px;
   }
 }
 @media (min-width: 1440px) {
   .range-slider .noUi-base {
-    max-width: 300px;
+    width: 300px;
   }
 }
 .range-slider .noUi-connects {
@@ -4623,8 +4406,19 @@ button,
   cursor: pointer;
   margin-top: -5px;
 }
-.range-slider .noUi-handle::before, .range-slider .noUi-handle::after {
-  display: none;
+.range-slider .noUi-touch-area:hover, .range-slider .noUi-touch-area:focus {
+  background-color: #eae6fc;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  margin: 2px;
+}
+.range-slider .noUi-touch-area:active {
+  background-color: #7859cf;
+  height: 16px;
+  width: 16px;
+  border-radius: 50%;
+  margin: 2px;
 }
 .range-slider .noUi-tooltip {
   display: none;
