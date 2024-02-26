@@ -38,6 +38,7 @@
 
 .button__apply {
   @include global;
+  font-weight: 400;
   padding: 8px;
   border: none;
   border-radius: 4px;
