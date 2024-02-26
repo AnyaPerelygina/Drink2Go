@@ -3786,12 +3786,14 @@ button,
 .nav__link:hover, .nav__link:focus {
   color: #7859cf;
 }
-.nav__link:active {
-  color: #7859cf;
-}
 @media (min-width: 768px) {
   .nav__link {
     padding: 0;
+  }
+}
+@media (min-width: 1440px) {
+  .nav__link:active {
+    color: #7859cf;
   }
 }
 

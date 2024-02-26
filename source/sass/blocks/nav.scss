@@ -164,12 +164,14 @@
     color: $base-primary;
   }
 
-  &:active {
-    color: $base-primary;
-  }
-
   @media (min-width: $tablet-width) {
     padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    &:active {
+      color: $base-primary;
+    }
   }
 }
 
