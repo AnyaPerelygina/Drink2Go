@@ -27,16 +27,31 @@ const initRangeSliders = () => {
         maxInput.value = Math.round(max).toLocaleString('ru');
       });
 
+      // Добавление обработчиков событий focus и blur для каждого поля ввода
+      minInput.addEventListener('focus', () => {
+        minInput.value = ''; // Очистка поля ввода при фокусе
+      });
+
+      minInput.addEventListener('blur', () => {
+        const [min] = slider.get(); // Получение текущих значений ползунков
+        minInput.value = Math.round(min).toLocaleString('ru'); // Установка текущего значения поля ввода
+      });
+
+      maxInput.addEventListener('focus', () => {
+        maxInput.value = ''; // Очистка поля ввода при фокусе
+      });
+
+      maxInput.addEventListener('blur', () => {
+        const [, max] = slider.get(); // Получение текущих значений ползунков
+        maxInput.value = Math.round(max).toLocaleString('ru'); // Установка текущего значения поля ввода
+      });
+
       minInput.addEventListener('input', () => {
-        let minVal = parseInt(minInput.value.replace(/\D/g, ''), 10);
+        const minVal = parseInt(minInput.value.replace(/\D/g, ''), 10);
         let maxVal = parseInt(maxInput.value.replace(/\D/g, ''), 10);
 
         if (isNaN(minVal)) {
           minVal = 0;
-        }
-
-        if (minVal > maxVal) {
-          minVal = maxVal;
         }
 
         slider.set([minVal, maxVal]);
