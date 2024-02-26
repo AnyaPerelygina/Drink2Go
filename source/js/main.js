@@ -1,10 +1,10 @@
 import {iosVhFix} from './utils/ios-vh-fix';
-import {CustomSelect} from './vendor/select/custom-select';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {toggleNav} from './modules/nav/toggle';
 import {createPromoSlider} from './modules/promo/promo-slider';
 import {initRangeSliders} from './modules/filters/filters';
+import {CustomSelect} from './vendor/select/custom-select';
 import {initLeaflet} from './modules/leaflet/leaflet';
 // ---------------------------------
 

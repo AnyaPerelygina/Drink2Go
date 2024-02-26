@@ -28,10 +28,8 @@ const initRangeSliders = () => {
       });
 
       minInput.addEventListener('input', () => {
-        // eslint-disable-next-line radix
-        let minVal = parseInt(minInput.value.replace(/\D/g, ''));
-        // eslint-disable-next-line radix
-        let maxVal = parseInt(maxInput.value.replace(/\D/g, ''));
+        let minVal = parseInt(minInput.value.replace(/\D/g, ''), 10);
+        let maxVal = parseInt(maxInput.value.replace(/\D/g, ''), 10);
 
         if (isNaN(minVal)) {
           minVal = 0;
@@ -45,10 +43,8 @@ const initRangeSliders = () => {
       });
 
       maxInput.addEventListener('input', () => {
-        // eslint-disable-next-line radix
-        let minVal = parseInt(minInput.value.replace(/\D/g, ''));
-        // eslint-disable-next-line radix
-        let maxVal = parseInt(maxInput.value.replace(/\D/g, ''));
+        let minVal = parseInt(minInput.value.replace(/\D/g, ''), 10);
+        let maxVal = parseInt(maxInput.value.replace(/\D/g, ''), 10);
 
         if (isNaN(maxVal)) {
           maxVal = 1100;
@@ -59,7 +55,7 @@ const initRangeSliders = () => {
         }
 
         if (maxVal < minVal) {
-          maxVal = minVal; // Если максимальное значение меньше минимального, делаем их равными
+          maxVal = minVal;
         }
 
         slider.set([minVal, maxVal]);
